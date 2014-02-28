@@ -6,3 +6,16 @@ Google is a project combine practice with theory, that is the most
 beautiful part of this project.
 This project should all be implemented with native Linux programming language, i mean only these languages will be chosen, C, C++, Python, Perl, PHP.
 Don't not use Java implement any part of my system, for Java is the wrong choice in efficiency.
+
+28/Feb/2014
+there are something i want to make it clear, my ultimite goal is to
+build a search engine system a little like Google. for these days,
+i have read some books, seen something, it is pretty inspiring. and
+in the declaration of 10/Jan/2014, I want to use none Java language
+to implement the system, now, here I change this princple, for me,
+it is not likely workable to just use C++ to do the work, for
+example, I can't find a solution to parse the html document using
+C++ until now. and since, there a plenty of books and resource
+I can use when using Java implement the system.
+In a word, I am gonna use Java in my system to boots up the
+development speed.

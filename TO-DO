@@ -1,0 +1,3 @@
+28/Feb/2014
+get myself familiar with apache's httpclient, and implement a class
+that is responsible to download a url link.
