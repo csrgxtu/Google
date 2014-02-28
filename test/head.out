@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Date: Sat, 18 Jan 2014 05:15:46 GMT
+Server: Apache/2.2.22 (Ubuntu)
+X-Powered-By: PHP/5.3.10-1ubuntu3.8
+X-Pingback: http://blogxtu.zapto.org/xmlrpc.php
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

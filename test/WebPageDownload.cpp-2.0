@@ -1,0 +1,155 @@
+/**
+ * Author: Archer Reilly
+ * Date: 09/Jan/2014
+ * File: WebPageDownloader.cpp
+ * Des: this file is used to download a webpage according the url
+ *  you specified. but not responsible for saving it to file, just
+ *  get the requested page into memory, i guess in string format.
+ *
+ * Produced By CSRGXTU.
+ **/
+#include <stdio.h>
+#include <curl/curl.h>
+#include <cstdlib>
+#include <string>
+#include <iostream>
+using namespace std;
+
+class WebPageDownload {
+    private:
+        // url contains the url that will be requested
+        string url;
+        // contents contains the web page source code
+        string contents;
+        // resCode contains the response code of the request
+        int resCode;
+        // curl is a pointer that holds the curl object
+        CURL * curl;
+
+    public:
+        // constructor responsible initialize the url
+        WebPageDownload(string url);
+
+        // provide a way to set the url
+        void setUrl(string url);
+
+        // provide a way to set contents
+        void setContents(string contents);
+
+        // provide a way to set resCode
+        void setResCode(int resCode);
+
+        // provide a way to get the url
+        string getUrl();
+
+        // provide a way to get the contents
+        string getContents();
+
+        // provide a way to get the resCode
+        int getResCode();
+
+        // a call back function work with run that is used to
+        // read the request data into the contents
+        static int contentsCallBack(char *data, size_t size, size_t nmemb, string *buffer) {
+
+            int result = 0;
+            if (buffer != NULL) {
+                buffer->append(data, size * nmemb);
+                result = size * nmemb;
+            }
+            return result;
+        }
+
+        // do the request
+        bool run();
+    
+};
+
+int main() {
+    WebPageDownload page("http://www.douban.com/");
+    cout << page.getContents() << endl;
+    //page.run();
+    return 0;
+}
+
+
+WebPageDownload::WebPageDownload(string url) {
+    if (url.length() <= 9) {
+        cout << "Fatal Error: constructor WebPageDownload " <<
+            "need url parameter!\n" << endl;
+        exit(1);
+    } else {
+        this->url = url;
+    }
+
+    // set curl object and perform the request and put response into
+    // the contents
+    this->curl = curl_easy_init();
+    if (!this->curl) {
+        cout << "Fatal Error: can not init the curl!" << endl;
+    }
+
+    curl_easy_setopt(this->curl, CURLOPT_WRITEFUNCTION, &WebPageDownload::contentsCallBack);
+    curl_easy_setopt(this->curl, CURLOPT_WRITEDATA, &contents);
+    curl_easy_setopt(this->curl, CURLOPT_URL, this->url.c_str());
+    curl_easy_perform(this->curl);
+}
+
+void WebPageDownload::setUrl(string url) {
+    this->url = url;
+}
+
+void WebPageDownload::setContents(string contents) {
+    this->contents = contents;
+}
+
+void WebPageDownload::setResCode(int resCode) {
+    this->resCode = resCode;
+}
+
+string WebPageDownload::getUrl() {
+    return this->url;
+}
+
+string WebPageDownload::getContents() {
+    return this->contents;
+}
+
+int WebPageDownload::getResCode() {
+    return this->resCode;
+}
+
+/*static int WebPageDownload::contentsCallBack(char *data,
+    size_t size, size_t nmemb, string *buffer) {
+    int result = 0;
+    if (buffer != NULL) {
+        buffer.append(data, size * nmemb);
+        result = size * nmemb;
+    }
+    return result;
+}*/
+
+bool WebPageDownload::run() {
+    CURL *curl;
+    CURLcode res;
+
+    curl_global_init(CURL_GLOBAL_ALL);
+    curl = curl_easy_init();
+    if (curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, this->url.c_str());
+        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &WebPageDownload::contentsCallBack);
+        res = curl_easy_perform(curl);
+        curl_easy_cleanup(curl);
+        curl_global_cleanup();
+
+        if (res != CURLE_OK) {
+            this->resCode = 403;
+            return false;
+        } else {
+            this->resCode = 200;
+            return true;
+        }
+
+    }
+}
