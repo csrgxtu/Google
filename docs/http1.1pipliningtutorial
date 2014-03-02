@@ -1,0 +1,4 @@
+02/Mar/2014
+The following link tell you what is http1.1 pipilining, ie. issusing
+multiple request on a single connection.
+http://www-archive.mozilla.org/projects/netlib/http/pipelining-faq.html
