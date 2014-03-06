@@ -17,6 +17,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.client.*;
 
 public class HtmlDownloader {
     /**
@@ -44,6 +45,10 @@ public class HtmlDownloader {
      */
     private HttpGet methodGet = null;
 
+    /**
+     * content is the html source code
+     */
+    private String content = "";
 
 
     /**
@@ -88,34 +93,51 @@ public class HtmlDownloader {
         return this.responseCode;
     }
 
-    public static void main(String[] args) {
-        String url = "http://blogxtu.zapto.org/";
+    public String getContent() {
+        return this.content;
+    }
 
+
+    /**
+     * doRequest is used to send the request
+     *
+     */
+    public void doRequest() {
         try {
-            DefaultHttpClient httpClient = new DefaultHttpClient();
-            HttpGet getRequest = new HttpGet(url);
-            
-            HttpResponse response = httpClient.execute(getRequest);
-
-            if (response.getStatusLine().getStatusCode() != 200) {
+            this.response = this.httpClient.execute(this.methodGet);
+        
+            if (this.response.getStatusLine().getStatusCode() != 200) {
                 throw new RuntimeException("Failed: HTTP Error Code: "
-                    + response.getStatusLine().getStatusCode());
+                    + this.response.getStatusLine().getStatusCode());
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
-                response.getEntity().getContent()));
+                this.response.getEntity().getContent()));
 
             String output;
-            System.out.println("Output from server ...\n");
+            //System.out.println("Output from server ...\n");
             while ((output = br.readLine()) != null) {
-                System.out.println(output);
+                //System.out.println(output);
+                output += "\n";
+                this.content += output;
             }
-
-            httpClient.getConnectionManager().shutdown();
         } catch (ClientProtocolException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.err.println("A Client Protocol Exception");
         } catch (IOException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.err.println("A IO Exception");
+        } finally {
+            this.httpClient.getConnectionManager().shutdown();
         }
+    }
+ 
+    public static void main(String[] args) {
+        String url = "http://localhost:1337/main/login/";
+        HtmlDownloader HtmlDownloaderObj = new HtmlDownloader(url);
+        HtmlDownloaderObj.doRequest();
+        System.out.println(HtmlDownloaderObj.getContent());
+
+        System.out.println("lalala");
     } 
 }

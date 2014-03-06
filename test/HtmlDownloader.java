@@ -20,7 +20,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 public class HtmlDownloader {
     public static void main(String[] args) {
-        String url = "http://blogxtu.zapto.org/";
+        String url = "http://localhost:1337/main/home";
 
         try {
             DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -47,6 +47,8 @@ public class HtmlDownloader {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.err.println("what the fuck is going on"); 
         }
     } 
 }
