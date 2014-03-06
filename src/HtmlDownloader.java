@@ -18,6 +18,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.client.*;
+import org.apache.http.Header;
 
 public class HtmlDownloader {
     /**
@@ -97,6 +98,15 @@ public class HtmlDownloader {
         return this.content;
     }
 
+    /**
+     * getRequestHead is used to get the head data of the request
+     */
+    public void getRequestHead() {
+        Header[] headers = this.response.getAllHeaders();
+        for (Header header : headers) {
+            System.out.println(header.toString());
+        }
+    }
 
     /**
      * doRequest is used to send the request
@@ -133,10 +143,11 @@ public class HtmlDownloader {
     }
  
     public static void main(String[] args) {
-        String url = "http://localhost:1337/main/login/";
+        String url = "http://blogxtu.zapto.org/";
         HtmlDownloader HtmlDownloaderObj = new HtmlDownloader(url);
         HtmlDownloaderObj.doRequest();
-        System.out.println(HtmlDownloaderObj.getContent());
+        //System.out.println(HtmlDownloaderObj.getContent());
+        HtmlDownloaderObj.getRequestHead();
 
         System.out.println("lalala");
     } 
