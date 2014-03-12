@@ -142,13 +142,4 @@ public class HtmlDownloader {
         }
     }
  
-    public static void main(String[] args) {
-        String url = "http://blogxtu.zapto.org/";
-        HtmlDownloader HtmlDownloaderObj = new HtmlDownloader(url);
-        HtmlDownloaderObj.doRequest();
-        //System.out.println(HtmlDownloaderObj.getContent());
-        HtmlDownloaderObj.getRequestHead();
-
-        System.out.println("lalala");
-    } 
 }

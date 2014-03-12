@@ -1,3 +1,10 @@
 28/Feb/2014
 get myself familiar with apache's httpclient, and implement a class
 that is responsible to download a url link.
+
+12/Mar/2014
+well, it is wired, i remember that last time i tested the mongodb
+in this project, and synched with the github, but this time, when
+i check, there is no such thing. well, whatever, I need to create
+database and store the visited and unvisited table in the mongo
+database.

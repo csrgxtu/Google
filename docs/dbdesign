@@ -1,0 +1,8 @@
+12/Mar/2014 Old Building
+well, for the sake of newness, i decided to use MongoDB as the
+database to store the visited and unvisted table. for i heard
+that MongoDB is for massive data and it is very quick, and it
+is very small.
+
+for visited and unvisited table, just put url field in it,
+dont need to be complicated this time.
