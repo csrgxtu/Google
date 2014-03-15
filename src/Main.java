@@ -23,16 +23,14 @@ public class Main {
     int port = 27017;
     ArrayList<String> urls;
 
-    for (int k = 0; k < 1000; k++) {
+    for (int k = 0; k < 10; k++) {
+    System.out.println("What the fuck is going on ...");
     // retrieve url from unvisited collection
     LoadUrlFromDB loadUrlDBObj = new LoadUrlFromDB(host, port);
     urls = loadUrlDBObj.retrieveUrls(0, 10);
     
     // download the html page
     for (int i = 0; i < urls.size(); i++) {
-      if (urls.get(i) == null) {
-        continue;
-      }
       System.out.println("Requesting " + urls.get(i));
       HtmlDownloader htmlDownloaderObj = new HtmlDownloader(
         urls.get(i));

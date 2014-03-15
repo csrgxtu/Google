@@ -87,6 +87,14 @@ public class SaveUrlToDB {
 
 
   /**
+   * close is used to close this connection
+   *
+   */
+  public void close() {
+    this.mongoClient.close();
+  }
+
+  /**
    * saveUrl is used to save an url into the this.collectionName
    *
    * @param String
@@ -155,9 +163,21 @@ public class SaveUrlToDB {
     }
 
     for (int i = 0; i < urls.length; i++) {
-      if (urls[i] == "") {
-        return false;
+      // before doing inserting, check url intergrety, for more info
+      // check class UrlFilter
+      UrlFilter urlFilter = new UrlFilter(urls[i]);
+      /*if (!urlFilter.filter()) {
+        System.out.println("Shit Shit Shit " + urls[i]);
+        continue; // jump over untidy urls
+      }*/
+      if (urlFilter.filter()) {
+        // is the url what i want
+        System.out.println("Oh ... " + urls[i]);
+      } else {
+        System.out.println("Shit Shit Shit " + urls[i]);
+        continue;
       }
+
       // before insert, check if url is already in visited, if so,
       // dont insert, check if url is already in unvisited, if so,
       // dont insert too

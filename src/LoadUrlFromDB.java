@@ -88,6 +88,12 @@ public class LoadUrlFromDB {
   }
 
   /**
+   * close used to close this client to the MongoDB server
+   */
+  public void close() {
+    this.mongoClient.close();
+  }
+  /**
    * readUrls is used to read unvisited urls from this.dbName
    *
    * @param start

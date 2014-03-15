@@ -11,3 +11,10 @@ database.
 
 14/Mar/2014
 focus on how to solve the abs urls problems in RetrieveHref.java
+
+15/Mar/2014
+focus on solving the variaty url problems, i.e, i want url is sth
+standard like "http://blogxtu.zapto.org/", if the url isnt a url
+or is empty or point to a big large file, it needs to be filted.
+also, I want to  implement a functionality to crawl only a website,
+just like what Nutch does.
