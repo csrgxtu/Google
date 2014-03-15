@@ -97,8 +97,7 @@ public class UrlFilter {
       return true;
     }
 
-    // not detected, dont trust it
-    return false;
+    return true;
   }
 
   /**

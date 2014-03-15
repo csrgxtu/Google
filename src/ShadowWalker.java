@@ -1,7 +1,7 @@
 //*******************************************************************
 // Author: Archer Reilly
 // Date: 12/Mar/2014
-// File: Main.java
+// File: ShadowWalker.java
 // Des: Main program that make all the tools work together
 //
 // Produced By CSRGXTU
@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * D, save the url into unvisited by SaveUrlToDB
  * F, loop the upper steps
  */ 
-public class Main {
+public class ShadowWalker {
 
   public static void main(String[] args) {
     String host = "localhost";

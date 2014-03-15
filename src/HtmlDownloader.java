@@ -19,6 +19,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.client.*;
 import org.apache.http.Header;
+import org.apache.http.params.*;
+
 
 public class HtmlDownloader {
     /**
@@ -40,6 +42,12 @@ public class HtmlDownloader {
      * httpClient is the client instance var
      */
     private HttpClient httpClient = null;
+
+    /**
+     * httpParams is the HttpParams used to set options for the
+     * connection
+     */
+    private HttpParams httpParams = null;
 
     /**
      * methodGet is the method instance var
@@ -67,6 +75,13 @@ public class HtmlDownloader {
         // init
         this.url = url;
         this.httpClient = new DefaultHttpClient();
+        this.httpParams = this.httpClient.getParams();
+        HttpConnectionParams.setConnectionTimeout(this.httpParams, 20000);
+        HttpConnectionParams.setSoTimeout(this.httpParams, 20000);
+
+        // timeout 20 secs
+        //this.httpClient.getParams().setConnectionManagerTimeout(20000);
+        //this.httpClient.getParams().setParameter("http.connection.timeout", 20000);
         this.methodGet = new HttpGet(this.url);
     }
     
