@@ -112,13 +112,16 @@ public class HtmlDownloader {
      * doRequest is used to send the request
      *
      */
-    public void doRequest() {
+    public int doRequest() {
         try {
             this.response = this.httpClient.execute(this.methodGet);
         
             if (this.response.getStatusLine().getStatusCode() != 200) {
-                throw new RuntimeException("Failed: HTTP Error Code: "
-                    + this.response.getStatusLine().getStatusCode());
+                //throw new RuntimeException("Failed: HTTP Error Code: "
+                 //   + this.response.getStatusLine().getStatusCode());
+                System.err.println(this.response.getStatusLine().getStatusCode()
+                  + " " + this.url);
+                return this.response.getStatusLine().getStatusCode();
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -140,6 +143,9 @@ public class HtmlDownloader {
         } finally {
             this.httpClient.getConnectionManager().shutdown();
         }
+
+        // request ok
+        return 200;
     }
  
 }

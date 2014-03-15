@@ -8,3 +8,6 @@ in this project, and synched with the github, but this time, when
 i check, there is no such thing. well, whatever, I need to create
 database and store the visited and unvisited table in the mongo
 database.
+
+14/Mar/2014
+focus on how to solve the abs urls problems in RetrieveHref.java

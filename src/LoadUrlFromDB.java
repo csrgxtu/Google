@@ -45,7 +45,13 @@ public class LoadUrlFromDB {
   // colConnection is the collection connection
   private DBCollection colConnection = null;
 
-  
+  // visitedConnection is the collection connection of visited
+  private DBCollection visitedConnection = null;
+
+  // unvisitedConnection is the collection connection of unvisited
+  private DBCollection unvisitedConnection = null;
+
+ 
   /**
    * constructor responsible init memeber properties
    *
@@ -68,6 +74,8 @@ public class LoadUrlFromDB {
       this.mongoClient = new MongoClient(this.host, this.port);
       this.dbConnection = this.mongoClient.getDB(this.dbName);
       this.colConnection = this.dbConnection.getCollection(this.collectionName);
+      this.visitedConnection = this.dbConnection.getCollection("visited");
+      this.unvisitedConnection = this.dbConnection.getCollection("unvisited");
     } catch (Exception e) {
       // Debug
       System.out.println("INFO: Failed to connect to the database");
@@ -102,14 +110,14 @@ public class LoadUrlFromDB {
   }
 
   /**
-   * retriveUrls retrive url from unvisited table and remove it
+   * retrieveUrls retrive url from unvisited table and remove it
    * from unvisited table.
    *
    * @param start
    * @param offset
    * @return ArrayList
    */
-  public ArrayList<String> retriveUrls(int start, int offset) {
+  public ArrayList<String> retrieveUrls(int start, int offset) {
     //check the parameter
 
     ArrayList<String> urls = new ArrayList<String>();
@@ -123,6 +131,7 @@ public class LoadUrlFromDB {
       urls.add(dbObject.get("url").toString());
 
       this.colConnection.remove(dbObject);
+      this.visitedConnection.insert(dbObject);
     }
 
     return urls;

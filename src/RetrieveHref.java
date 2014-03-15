@@ -46,6 +46,23 @@ public class RetrieveHref {
   }
 
   /**
+   * constructor
+   *
+   * @param String
+   * @param baseUrl
+   */
+  public RetrieveHref(String htmlStr, String baseUrl) {
+    // check out the parameter
+    if (htmlStr == null || baseUrl == null) {
+      throw new IllegalArgumentException("RetrieveHref:Constructor"
+        + " parameter arnt set properly!");
+    }
+
+    this.htmlStr = htmlStr;
+    this.doc = Jsoup.parse(this.htmlStr, baseUrl);
+  }
+
+  /**
    * parseLinks is used to parse all hyper text links
    *
    * @return ArrayList<String>
