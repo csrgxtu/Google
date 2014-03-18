@@ -84,7 +84,7 @@ public class LoadUrlFromDB {
     }
 
     // Debug
-    System.out.println("INFO: Connected to the database");
+    //System.out.println("INFO: Connected to the database");
   }
 
   /**
