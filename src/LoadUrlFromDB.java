@@ -107,9 +107,13 @@ public class LoadUrlFromDB {
 
     DBCursor cursor = this.colConnection.find().skip(start)
       .limit(offset);
-    while (cursor.hasNext()) {
-      // DBObject extends BSONObject, so use get get what u want
-      urls.add(cursor.next().get("url").toString());
+    try {
+      while (cursor.hasNext()) {
+        // DBObject extends BSONObject, so use get get what u want
+        urls.add(cursor.next().get("url").toString());
+      }
+    } catch (MongoException e) {
+      return null;
     }
 
     return urls;
@@ -132,12 +136,16 @@ public class LoadUrlFromDB {
     DBCursor cursor = this.colConnection.find().skip(start)
       .limit(offset);
 
-    while (cursor.hasNext()) {
-      dbObject = cursor.next();
-      urls.add(dbObject.get("url").toString());
+    try {
+      while (cursor.hasNext()) {
+        dbObject = cursor.next();
+        urls.add(dbObject.get("url").toString());
 
-      this.colConnection.remove(dbObject);
-      this.visitedConnection.insert(dbObject);
+        this.colConnection.remove(dbObject);
+        this.visitedConnection.insert(dbObject);
+      }
+    } catch (MongoException e) {
+      return null; 
     }
 
     return urls;

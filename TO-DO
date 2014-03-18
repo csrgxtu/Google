@@ -18,3 +18,11 @@ standard like "http://blogxtu.zapto.org/", if the url isnt a url
 or is empty or point to a big large file, it needs to be filted.
 also, I want to  implement a functionality to crawl only a website,
 just like what Nutch does.
+
+17/Mar/2014
+Well, the ShadowWalker can work, but it didn't perfect, eat up 40
+percent of the CPU and 20 percent Memory. and sometimes stuck with
+an URL, long time without responding, it seems that the set
+connection timeout didnt do the work, well, httpclient is such a
+basterd, i am gonna to use hard way to limit the connection time,
+and write a domain filter to restrict the url into only a domain.

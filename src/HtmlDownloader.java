@@ -126,9 +126,11 @@ public class HtmlDownloader {
     /**
      * doRequest is used to send the request
      *
+     * @return boolean
      */
-    public int doRequest() {
+    public boolean doRequest() {
         try {
+
             this.response = this.httpClient.execute(this.methodGet);
         
             if (this.response.getStatusLine().getStatusCode() != 200) {
@@ -136,7 +138,8 @@ public class HtmlDownloader {
                  //   + this.response.getStatusLine().getStatusCode());
                 System.err.println(this.response.getStatusLine().getStatusCode()
                   + " " + this.url);
-                return this.response.getStatusLine().getStatusCode();
+                //return this.response.getStatusLine().getStatusCode();
+                return false;
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -151,16 +154,31 @@ public class HtmlDownloader {
             }
         } catch (ClientProtocolException e) {
             //e.printStackTrace();
-            System.err.println("A Client Protocol Exception");
+            //System.err.println("A Client Protocol Exception");
+            return false;
         } catch (IOException e) {
             //e.printStackTrace();
-            System.err.println("A IO Exception");
+            //System.err.println("A IO Exception");
+            return false;
         } finally {
             this.httpClient.getConnectionManager().shutdown();
         }
 
         // request ok
-        return 200;
+        return true;
     }
+
+    // testing
+    /*public static void main(String[] args) {
+      String url = "http://csrgxtu3/test.php";
+      HtmlDownloader htmlDownloader = new HtmlDownloader(url);
+      int rtv = htmlDownloader.doRequest();
+      if (rtv == 200) {
+        System.out.println("Success do the request!");
+        System.out.println(htmlDownloader.getContent());
+      } else {
+        System.out.println("Failure do the request!");
+      }
+    }*/
  
 }
