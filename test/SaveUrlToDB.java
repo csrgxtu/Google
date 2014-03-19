@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class SaveUrlToDB {
   // host is the MongoDB server host address
-  private String host = "localhost";
+  private String host = "csrgxtu3";
 
   // port is the port number of the server
   private int port = 27017;
@@ -43,7 +43,13 @@ public class SaveUrlToDB {
   // colConnection is the collection connection
   private DBCollection colConnection = null;
 
-  
+  // visitedConnection is the collection connection of visited
+  private DBCollection visitedConnection = null;
+
+  // unvisitedConnection is the collection connection of unvisited 
+  private DBCollection unvisitedConnection = null;
+
+
   /**
    * constructor responsible init memeber properties
    *
@@ -66,6 +72,8 @@ public class SaveUrlToDB {
       this.mongoClient = new MongoClient(this.host, this.port);
       this.dbConnection = this.mongoClient.getDB(this.dbName);
       this.colConnection = this.dbConnection.getCollection(this.collectionName);
+      this.visitedConnection = this.dbConnection.getCollection("visisted");
+      this.unvisitedConnection = this.dbConnection.getCollection("unvisited");
     } catch (Exception e) {
       // Debug
       System.out.println("INFO: Failed to connect to the database");
@@ -74,9 +82,34 @@ public class SaveUrlToDB {
     }
 
     // Debug
-    System.out.println("INFO: Connected to the database");
+    //System.out.println("INFO: Connected to the database");
   }
 
+  /**
+   * Constuctor
+   *
+   */
+  public SaveUrlToDB() {
+    try {
+      this.mongoClient = new MongoClient(this.host, this.port);
+      this.dbConnection = this.mongoClient.getDB(this.dbName);
+      this.colConnection = this.dbConnection.getCollection("unvisited");
+      this.visitedConnection = this.dbConnection.getCollection("visited");
+      this.unvisitedConnection = this.dbConnection.getCollection("unvisited");
+    } catch (Exception e) {
+      System.err.println("SaveUrlToDB:Constructor Fatal Error Cant Work with"
+        + " MongoDB");
+      System.exit(1);
+    }
+  }
+
+  /**
+   * close is used to close this connection
+   *
+   */
+  public void close() {
+    this.mongoClient.close();
+  }
 
   /**
    * saveUrl is used to save an url into the this.collectionName
@@ -86,6 +119,9 @@ public class SaveUrlToDB {
    */
   public boolean saveUrl(String url) {
     // check out the parameter
+    if (url == "") {
+      return false;
+    }
 
     try { 
       // build the basic mongodb document object
@@ -110,6 +146,10 @@ public class SaveUrlToDB {
     // check out the parameter
 
     for (int i = 0; i < urls.length; i++) {
+      if (urls[i] == "") {
+        return false;
+      }
+
       try {
         BasicDBObject doc = new BasicDBObject("url", urls[i]);
 
@@ -123,6 +163,111 @@ public class SaveUrlToDB {
     return true;
 
   }
+
+  /**
+   * saveUrls is used to save a lot of url into this.collectionName only
+   * if the url isnt visited, or not in visited collection
+   *
+   * @param: String[]
+   * @param: boolean
+   * @return boolean
+   */
+  public boolean saveUrls(String[] urls, boolean flag) {
+    // check out the parameter
+    if (urls == null) {
+      throw new IllegalArgumentException("SaveUrlToDB:saveUrls "
+        + "parameter anit set properly");
+    }
+
+    for (int i = 0; i < urls.length; i++) {
+      // before doing inserting, check url intergrety, for more info
+      // check class UrlFilter
+      UrlFilter urlFilter = new UrlFilter(urls[i]);
+      /*if (!urlFilter.filter()) {
+        System.out.println("Shit Shit Shit " + urls[i]);
+        continue; // jump over untidy urls
+      }*/
+      if (urlFilter.filter()) {
+        // is the url what i want
+        System.out.println("Oh ... " + urls[i]);
+      } else {
+        System.out.println("Shit Shit Shit " + urls[i]);
+        continue;
+      }
+
+      // before insert, check if url is already in visited, if so,
+      // dont insert, check if url is already in unvisited, if so,
+      // dont insert too
+      if (this.isVisited(urls[i])) {
+        continue;
+      }
+      if (this.isUnvisited(urls[i])) {
+        continue;
+      }
+      try {
+        BasicDBObject doc = new BasicDBObject("url", urls[i]);
+
+        this.colConnection.insert(doc);
+      } catch (MongoException e) {
+        System.out.println("SaveUrlToDB:saveUrls " + e.getMessage());
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  /**
+   * isVisited is a helper method work for saveUrls, is used to check
+   * if a given url is visisted or not, check in visited collection
+   *
+   * @param: String
+   * @return boolean
+   */
+  private boolean isVisited(String url) {
+    // ckeck out the parameter
+    if (url == null) {
+      throw new IllegalArgumentException("SaveUrlToDB:isVisited "
+        + "parameter anit set properly");
+    }
+
+    // build a query
+    BasicDBObject query = new BasicDBObject("url", url);
+
+    DBCursor cursor = this.visitedConnection.find(query);
+
+    if (cursor.count() == 0) {
+      return false;
+    } else {
+      return true;
+    }
+    
+  }
+
+  /**
+   * isUnvisited is a helper method work for saveUrls, is used to check
+   * if a given url is in unvisited tble
+   *
+   * @param String
+   * @return boolean
+   */
+  private boolean isUnvisited(String url) {
+    // check out the parameter
+    if (url == null) {
+      throw new IllegalArgumentException("SaveUrlToDB:isUnvisited "
+        + "parameter anit set properly");
+    }
+
+    BasicDBObject query = new BasicDBObject("url", url);
+    DBCursor cursor = this.unvisitedConnection.find(query);
+
+    if (cursor.count() == 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
 
   /**
    * readUrls is used to read unvisited urls from this.dbName
@@ -173,6 +318,53 @@ public class SaveUrlToDB {
     return urls;
   }
 
+  /**
+   * removeVisited remove the visited table
+   *
+   * @return boolean
+   */
+  private boolean removeVisited() {
+    try {
+      this.visitedConnection.drop();
+      return true;
+    } catch (MongoException e) {
+      return false;
+    }
+  }
+  
+  /**
+   * removeUnvisited remove the unvisited table
+   *
+   * @return boolean
+   */
+  private boolean removeUnvisited() {
+    try {
+      this.unvisitedConnection.drop();
+      return true;
+    } catch (MongoException e) {
+      return false;
+    }
+  }
+  
+  /**
+   * removeCollections remove all collections in Google Database
+   *
+   * @return boolean
+   */
+  public boolean removeCollections() {
+    if (this.removeVisited()) {
+      //return true;
+    } else {
+      return false;
+    }
+    
+    if (this.removeUnvisited()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
   public String getHost() {
     return this.host;
   }
@@ -195,28 +387,6 @@ public class SaveUrlToDB {
 
   public void setDBName(String dbName) {
     this.dbName = dbName;
-  }
-
-  // Testing method
-  public static void main(String[] args) {
-    String host = "localhost";
-    int port = 27017;
-    String colName = "visited";
-    String url = "http://www.google.com/";
-    ArrayList<String> urls = new ArrayList<String>();
-
-    SaveUrlToDB obj = new SaveUrlToDB(host, port, colName);
-
-    if (obj.saveUrl(url)) {
-      System.err.println("OK When Insert into DATABASE");
-    } else {
-      System.err.println("Fatal Error When Insert into DATABASE");
-    }
-    urls = obj.readUrls(0, 10);
-    for (int i = 0; i < urls.size(); i++) {
-      System.out.println(urls.get(i));
-    }
-
   }
 
 }

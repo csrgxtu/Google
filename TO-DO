@@ -42,3 +42,10 @@ download all the pages from a target domain and save the file
 into disk. oh, by the way, i need to filter the url that is used
 for section location in a html page, ie 
   http://blogxtu.zapto.org/index.html#readme
+  
+19/Mar/2014
+HtmlDownloader is working fine, LoadUrlFromDB is fine, SaveUrlToDB
+is fine, UrlFilter is fine, DomainFilter is fine, RetrieveHref is
+fine, FileSaver is fine too, lets write a Main program that can
+make it all work together. oh, you need write a class that is
+responsible for read seed and init the database in Mongo.

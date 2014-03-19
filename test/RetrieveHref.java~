@@ -81,10 +81,10 @@ public class RetrieveHref {
       // jump over section url
       Matcher matcher = pattern.matcher(link.attr("abs:href"));
       if (matcher.find()) {
-        //continue;
+        continue;
       }
       res.add(link.attr("abs:href").toString());      
-      System.out.println("\nlink : " + link.attr("href"));
+      System.out.println("\nlink : " + link.attr("abs:href"));
     }
 
     return res;
@@ -123,13 +123,13 @@ public class RetrieveHref {
   }
 
   // Debuging
-  public static void main(String[] args) {
-    String url = "http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html";
+  /*public static void main(String[] args) {
+    String url = "http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html";
     HtmlDownloader htmlDownloaderObj = new HtmlDownloader(url);
     htmlDownloaderObj.doRequest();
     String html = htmlDownloaderObj.getContent();
 
-    RetrieveHref retrieveHrefObj = new RetrieveHref(html);
+    RetrieveHref retrieveHrefObj = new RetrieveHref(html, url);
     retrieveHrefObj.parseLinks();
-  }
+  }*/
 }

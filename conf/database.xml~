@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Google>
+  <mongo>
+    <host>csrgxtu3</host>
+    <port>27017</port>
+    <dbName>Google</dbName>
+    <colNameA>visited</colNameA>
+    <colNameB>unvisited</colNameB>
+  </mongo>
+</Google>

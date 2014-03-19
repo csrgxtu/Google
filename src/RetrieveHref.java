@@ -15,6 +15,10 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
 public class RetrieveHref {
   // htmlStr contains the original html source code
   private String htmlStr = null;
@@ -69,11 +73,18 @@ public class RetrieveHref {
    */
   public ArrayList<String> parseLinks() {
     ArrayList<String> res = new ArrayList<String>();
+    String patternStr = "(https?://.*/.*#.*)";
+    Pattern pattern = Pattern.compile(patternStr);
 
     Elements links = this.doc.select("a");
     for (Element link : links) {
+      // jump over section url
+      Matcher matcher = pattern.matcher(link.attr("abs:href"));
+      if (matcher.find()) {
+        continue;
+      }
       res.add(link.attr("abs:href").toString());      
-      //System.out.println("\nlink : " + link.attr("abs:href"));
+      System.out.println("\nlink : " + link.attr("abs:href"));
     }
 
     return res;
@@ -113,12 +124,12 @@ public class RetrieveHref {
 
   // Debuging
   /*public static void main(String[] args) {
-    String url = "http://blogxtu.zapto.org/";
+    String url = "http://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html";
     HtmlDownloader htmlDownloaderObj = new HtmlDownloader(url);
     htmlDownloaderObj.doRequest();
     String html = htmlDownloaderObj.getContent();
 
-    RetrieveHref retrieveHrefObj = new RetrieveHref(html);
+    RetrieveHref retrieveHrefObj = new RetrieveHref(html, url);
     retrieveHrefObj.parseLinks();
   }*/
 }
