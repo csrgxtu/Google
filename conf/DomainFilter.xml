@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Google>
   <filter id="0001">
-    <domainFilter>(http://blogxtu.zapto.org/.*)</domainFilter>
+    <domainFilter>(http://www.xtu.edu.cn/.*)</domainFilter>
   </filter>
 </Google>
