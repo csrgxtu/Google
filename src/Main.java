@@ -41,7 +41,7 @@ public class Main {
     // loop forever, check the loop over condition in it
     for (int i = 0; ; i++) {
       // use LoadUrlFromDB load url from unvisited
-      LoadUrlFromDB loadUrlFromDB = new LoadUrlFromDB(host, port);
+      LoadUrlFromDB loadUrlFromDB = new LoadUrlFromDB();
       ArrayList<String> retrievedUrls = loadUrlFromDB.retrieveUrls(0, 100);
       if (retrievedUrls == null) {
         System.err.println("Main:main Fatal Error When Retrieving urls from"
@@ -72,8 +72,10 @@ public class Main {
           }
  
           //System.out.println("Digest(in hex format):: " + sb.toString());
-          FileSaver fileSaver = new FileSaver(htmlDownloader.getContent(),
-            "./data/crawl-20-Mar-2014/" + sb.toString() + ".html");
+          String fileContent = htmlDownloader.getRequestHead()
+            + htmlDownloader.getContent();
+          FileSaver fileSaver = new FileSaver(fileContent,
+            "./data/crawl/" + sb.toString() + ".html");
           if (fileSaver.save()) {
             System.out.println("Saved file: " + sb.toString());
           } else {

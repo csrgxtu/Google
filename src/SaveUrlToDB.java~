@@ -18,41 +18,59 @@ import com.mongodb.ServerAddress;
 
 import java.util.ArrayList;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
+import org.w3c.dom.Element;
+import java.io.File;
+
 
 public class SaveUrlToDB {
   // host is the MongoDB server host address
-  private String host = "csrgxtu3";
+  private String host;
 
   // port is the port number of the server
-  private int port = 27017;
+  private int port;
 
   // dbName is the database name in the db server
   // default is Google
-  private String dbName = "Google";
+  private String dbName;
 
   // collectionName is the collection in the dbName
   // default is unvisited
-  private String collectionName = "visited";
+  private String collectionName;
 
+  // visitedCollection is the visited collection name
+  private String visitedCollection;
+  
+  // unvisitedCollection is the unvisited collection name
+  private String unvisitedCollection;
+  
   // mongoClient is the client object for MongoDB
-  private MongoClient mongoClient = null;
+  private MongoClient mongoClient;
 
   // dbConnection is the database connection
-  private DB dbConnection = null;
+  private DB dbConnection;
 
   // colConnection is the collection connection
-  private DBCollection colConnection = null;
+  private DBCollection colConnection;
 
   // visitedConnection is the collection connection of visited
-  private DBCollection visitedConnection = null;
+  private DBCollection visitedConnection;
 
   // unvisitedConnection is the collection connection of unvisited 
-  private DBCollection unvisitedConnection = null;
+  private DBCollection unvisitedConnection;
 
-
+  // DB_CONF_FILE is the configuration file of the database
+  final private String DB_CONF_FILE = "./conf/database.xml";
+  
+  
   /**
    * constructor responsible init memeber properties
    *
+   * @deprecated
    * @param host
    * @param port
    */
@@ -90,12 +108,21 @@ public class SaveUrlToDB {
    *
    */
   public SaveUrlToDB() {
+    if (!this.loadDBConf()) {
+      System.err.println("SaveUrlToDB:Constructor Fatal Error Failed to"
+        + " load database configuration file");
+      System.exit(1);
+    }
+    
     try {
       this.mongoClient = new MongoClient(this.host, this.port);
       this.dbConnection = this.mongoClient.getDB(this.dbName);
-      this.colConnection = this.dbConnection.getCollection("unvisited");
-      this.visitedConnection = this.dbConnection.getCollection("visited");
-      this.unvisitedConnection = this.dbConnection.getCollection("unvisited");
+      this.colConnection = this.dbConnection.getCollection(
+        this.unvisitedCollection);
+      this.visitedConnection = this.dbConnection.getCollection(
+        this.visitedCollection);
+      this.unvisitedConnection = this.dbConnection.getCollection(
+        this.unvisitedCollection);
     } catch (Exception e) {
       System.err.println("SaveUrlToDB:Constructor Fatal Error Cant Work with"
         + " MongoDB");
@@ -370,6 +397,54 @@ public class SaveUrlToDB {
     if (this.removeUnvisited()) {
       return true;
     } else {
+      return false;
+    }
+  }
+  
+  /**
+   * loadDBConf helper method that is used to load database conf
+   *
+   * @return boolean
+   */
+  private boolean loadDBConf() {
+    try {
+      File dbConfFile = new File(this.DB_CONF_FILE);
+      DocumentBuilderFactory dbFactory = DocumentBuilderFactory
+        .newInstance();
+
+      DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+      Document doc = dBuilder.parse(dbConfFile);
+      doc.getDocumentElement().normalize();
+
+      NodeList nList = doc.getElementsByTagName("host");
+      Node node = nList.item(0);
+      Element element = (Element)node;
+      this.host = element.getTextContent();
+      
+      nList = doc.getElementsByTagName("port");
+      node = nList.item(0);
+      element = (Element)node;
+      this.port = Integer.parseInt(element.getTextContent());
+      
+      nList = doc.getElementsByTagName("dbName");
+      node = nList.item(0);
+      element = (Element)node;
+      this.dbName = element.getTextContent();
+      
+      nList = doc.getElementsByTagName("colNameA");
+      node = nList.item(0);
+      element = (Element)node;
+      this.visitedCollection = element.getTextContent();
+      this.collectionName = this.visitedCollection;
+      
+      nList = doc.getElementsByTagName("colNameB");
+      node = nList.item(0);
+      element = (Element)node;
+      this.unvisitedCollection = element.getTextContent();
+      
+      return true;
+    } catch (Exception e) {
+      e.printStackTrace();
       return false;
     }
   }

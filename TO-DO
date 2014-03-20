@@ -58,4 +58,4 @@ the Main program that crawls a specified a virtualhost works very
 well, but there still something I need to do, first, use
 configuration file in program, dont hard code, second, sevral urls
 will point to the same page, so it means that u will dumplicate
-the html file.
+the html file, third, the DomainFilter is not that good.
