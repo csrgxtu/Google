@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title> Google Search </title>
+    <link rel="stylesheet" href="./styles/pure-min.css">
+    <style>
+      .center {
+        width: 50%;
+        height: 50%;
+        margin: 0px auto;
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .centera {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .Center-Container {
+        position: relative;
+      }
+
+      .Absolute-Center {
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+    </style>
+  </head>
+
+  <body class="Center-Container">
+    <!-- navgation bars -->
+    <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul>
+        <li><a href="http://www.ubuntu.com/">Linux</a></li>
+        <li class="pure-menu-selected"><a href="#">Search</a></li>
+        <li><a href="http://blogxtu.zapto.org/">Blog</a></li>
+        <li><a href="#">News</a></li>
+    </ul>
+    </div>
+
+    <!-- search box -->
+    <div class="Absolute-Center">
+    <img src="./images/Google-Logo.png" width="269" height="95" style="margin-left: 15%;">
+    <form class="pure-form">
+    <fieldset>
+        <input class="pure-input-2-3" type="text" name="search" placeholder="csrgxtu">
+        <button type="submit" class="pure-button pure-button-primary">Search</button>
+    </fieldset>
+    </form>
+    </div>
+
+
+  </body>
+</html>
