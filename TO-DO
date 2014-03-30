@@ -62,3 +62,15 @@ the html file, third, the DomainFilter is not that good.
 
 22/Mar/2014
 implement the search page!!!!
+
+25/Mar/2014
+well, the crawler can work, but it is too slow, and establishes too
+much connection to the MongoDB server, this is too heavy. and also
+it the crawler dosent support distributed crawling. here, i am gona
+to implement UrlDBManager class that schedules the operation on
+visited and unvisited table, at the same time redisign the way
+client program communicate with the MongoDB. and then, i will 
+standarlize the project using package manager of Java. thats enough
+for today. oh, after a searching around, i found that MongoDB dont
+support transactions as MySQL does, so without transactions, I cant
+gurateen the efficiency of the distributed crawling.

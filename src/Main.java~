@@ -28,8 +28,8 @@ public class Main {
   
   public static void main(String[] args) throws Exception {
     // set some vars
-    String host = "csrgxtu3";
-    int port = 27017;
+    //String host = "csrgxtu3";
+    //int port = 27017;
     
     // use InitDB init the database
     InitDB initDB = new InitDB();
@@ -42,7 +42,7 @@ public class Main {
     for (int i = 0; ; i++) {
       // use LoadUrlFromDB load url from unvisited
       LoadUrlFromDB loadUrlFromDB = new LoadUrlFromDB();
-      ArrayList<String> retrievedUrls = loadUrlFromDB.retrieveUrls(0, 100);
+      ArrayList<String> retrievedUrls = loadUrlFromDB.retrieveUrls(0, 1000);
       if (retrievedUrls == null) {
         System.err.println("Main:main Fatal Error When Retrieving urls from"
           + " unvisited table");
@@ -75,7 +75,7 @@ public class Main {
           String fileContent = htmlDownloader.getRequestHead()
             + htmlDownloader.getContent();
           FileSaver fileSaver = new FileSaver(fileContent,
-            "./data/crawl-20-Mar-2014/" + sb.toString() + ".html");
+            "./data/crawl-blogxtu.zapto.org/" + sb.toString() + ".html");
           if (fileSaver.save()) {
             System.out.println("Saved file: " + sb.toString());
           } else {

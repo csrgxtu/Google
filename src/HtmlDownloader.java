@@ -82,7 +82,12 @@ public class HtmlDownloader {
         // timeout 20 secs
         //this.httpClient.getParams().setConnectionManagerTimeout(20000);
         //this.httpClient.getParams().setParameter("http.connection.timeout", 20000);
-        this.methodGet = new HttpGet(this.url);
+        try {
+          this.methodGet = new HttpGet(this.url);
+        } catch (IllegalArgumentException e) {
+          System.out.println("HtmlDownloader:Constructor[88] Warning Url"
+            + " Syntax Error");
+        }
     }
     
     public void setUrl(String url) {
@@ -150,7 +155,12 @@ public class HtmlDownloader {
      */
     public boolean doRequest() {
         try {
-
+            // in constructor, HttpGet will fail if the url passed to
+            // it is too strange
+            if (this.methodGet == null) {
+              return false;
+            }
+            
             this.response = this.httpClient.execute(this.methodGet);
         
             if (this.response.getStatusLine().getStatusCode() != 200) {

@@ -1,0 +1,1092 @@
+Saved file: 3e13bc874a195b2ee48d5b64377b569a
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=2
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=3
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=4
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=5
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=68
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=90
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=10
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=11
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=9
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=7
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=12
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=6
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=8
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=13
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=15
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=16
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=37
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=38
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=17
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=14
+Unvisited Inserted: http://blogxtu.zapto.org/?page_id=24
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=18
+Unvisited Inserted: http://blogxtu.zapto.org/?paged=2
+Unvisited Inserted: http://blogxtu.zapto.org/?p=231
+Unvisited Inserted: http://blogxtu.zapto.org/?author=2
+Warning[105]: DomainFilter Failed: http://www.java.com/
+Warning[105]: DomainFilter Failed: http://www.apache.org/
+Warning[105]: DomainFilter Failed: http://www.youtube.com
+Warning[105]: DomainFilter Failed: http://www.facebook.com/
+Warning[105]: DomainFilter Failed: http://www.google.com
+Warning[105]: DomainFilter Failed: http://www.ubuntu.com/
+Warning[105]: DomainFilter Failed: http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-i586.tar.gz?AuthParam=1393160353_b57ea8ab0883145b26ec8264dd36cdbb
+Warning[105]: DomainFilter Failed: http://www.eclipse.org/
+Warning[105]: DomainFilter Failed: http://netbeans.org
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-oop
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=csrgxtu
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=java-install
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=java-manul-install
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=ubuntu-install
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=ubuntu-java
+Unvisited Inserted: http://blogxtu.zapto.org/?p=225
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=cryptography
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=cryptology
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=cryptology-substitution
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=csrgxtu-cryptology
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=csrgxtu-java-crypt
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=java-2
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=java-cryptology
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=python-cryptology
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=substitution
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=substitution-implemnetation
+Unvisited Inserted: http://blogxtu.zapto.org/?p=215
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-cryptography
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=cryptography-101
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=csrgxtu-cryptography
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=decoding
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=encode-string
+Unvisited Inserted: http://blogxtu.zapto.org/?p=212
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?cat=1
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-programming-challenge
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=largest-product-in-a-series
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=python-2
+Unvisited Inserted: http://blogxtu.zapto.org/?p=205
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-python
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=programming
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=programming-challenge
+Unvisited Inserted: http://blogxtu.zapto.org/?p=178
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=euler-project
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=linux-2
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=sum-square-difference
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=xtu
+Unvisited Inserted: http://blogxtu.zapto.org/?p=167
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=install-wordpress-ubuntu
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=own-blog
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=wordpress
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=wordpress-lamp
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=wordpress-ubuntu
+Unvisited Inserted: http://blogxtu.zapto.org/?p=119
+Unvisited Inserted: http://blogxtu.zapto.org/?author=1
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?p=112
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=funny
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=learning-chinese
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=shall-by-too
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=%e5%b0%8f%e7%99%bd%e5%85%94
+Unvisited Inserted: http://blogxtu.zapto.org/?p=86
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=apache-ssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-https
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=blogxtu-ssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=enable-ssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=linux-ssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=openssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=%e5%bc%80%e5%90%afssl
+Unvisited Inserted: http://blogxtu.zapto.org/?m=201402
+Unvisited Inserted: http://blogxtu.zapto.org
+Unvisited Inserted: http://blogxtu.zapto.org/?m=201312
+Unvisited Inserted: http://blogxtu.zapto.org/wp-login.php
+Unvisited Inserted: http://blogxtu.zapto.org/?feed=rss2
+Unvisited Inserted: http://blogxtu.zapto.org/?feed=comments-rss2
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: bf4cfcff8669ef828fbfd880cb80d100
+Unvisited Inserted: http://blogxtu.zapto.org/?p=76
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=http
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=https
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=secure-sockets-layer
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=ssl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=stl
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=%e5%ae%89%e5%85%a8%e9%93%be%e6%8e%a5
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 05012da77c449bf125a4968de5ec053c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 5bc090e66c98162361c6ddd5c1806c91
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: b6087bde5c68e02949fb4e5b1f4457fa
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 6f040b8838a4b405f82aa99c33a1180a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 280f232539d8eaa9e167c05fa5889d7a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 332d6865eb198c5100fbe40b31c8f8cf
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: a116623d0eeed279b85153c3bd951d3e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 26f22b33536d572b7a6cea17a9f5a930
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f735a51e505976102e2dde41c0d1282c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c593b9266010479da27c7ce192b22d65
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 9f9e4c26c32a1ab447d74b1e51582250
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: e7cd41596a005afc34b1c7450018aed2
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: b8c6f921180ac8533c3e55a1a990ea57
+Unvisited Inserted: http://blogxtu.zapto.org/?p=70
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=as-long-as-you-love-me
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=music
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f513bf6dd129e61fcccf06861ec23f0e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 20b6f31b4d6fac4c62c3b50cdf7c7f48
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 5b4b9726f6e4bcd57f8309b4b659ce55
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 9053aff1a80a5a7c631b0b997447fffc
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 658f117cbc5998656adf809751e64333
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 832c1f3e86e7d8613e8d5be35386abe1
+Unvisited Inserted: http://blogxtu.zapto.org/?p=68
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=life-2
+Unvisited Inserted: http://blogxtu.zapto.org/?tag=%e6%84%9f%e6%83%b3
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f1039c9e69fead880e2de94d20be1143
+Warning[105]: DomainFilter Failed: http://www.xtu.edu.cn
+Warning[105]: DomainFilter Failed: http://www.google.com.hk
+Warning[105]: DomainFilter Failed: http://www.wordpress.com
+Warning[105]: DomainFilter Failed: http://www.goagent.org
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 18f9188396f1c31802868f12c00c1fbb
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: afb7870143fea75bc5cd9dafb1c13f61
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c189dfe4bd0c654dc6a0b21c19eef2b0
+Warning[105]: DomainFilter Failed: http://www.java.com/
+Warning[105]: DomainFilter Failed: http://www.apache.org/
+Warning[105]: DomainFilter Failed: http://www.youtube.com
+Warning[105]: DomainFilter Failed: http://www.facebook.com/
+Warning[105]: DomainFilter Failed: http://www.google.com
+Warning[105]: DomainFilter Failed: http://www.ubuntu.com/
+Warning[105]: DomainFilter Failed: http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-i586.tar.gz?AuthParam=1393160353_b57ea8ab0883145b26ec8264dd36cdbb
+Warning[105]: DomainFilter Failed: http://www.eclipse.org/
+Warning[105]: DomainFilter Failed: http://netbeans.org
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: fd3e96934308f9bf4d324b0ff514255e
+Unvisited Inserted: http://blogxtu.zapto.org/?author=2&paged=2
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 28f93d9c214cfd5a8c6d1b6148992c20
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 8a84c941237bef2a609a6e1505e9f8e5
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 8e4c768db219bf8a7f080770977f1f87
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ee7234a515a37ef89f189b1b9970fc77
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: d8e6dd51c0492ac3679a576877c249c7
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: a45f8082e72c543c3360cddae0c3e4c7
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: d0abd0726fcd37f966d1f0a466162fee
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ddfc00b84ae9d6e245d9921552ec80a0
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: af57ea93a88b8adec058a565566bc15e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 6919b51a8241ecbcfdd6301822c856a4
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f8b117e2c0a1f55b4d4c8cdf740f2abb
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 0d00c1ea14990dc0da56aeb684651623
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: fa473f1f8cd5e844b1d750433f31025e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: d4ddc4f325719c4747066abb66824455
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 80e137d9c84abae3241023568ab7df3d
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 0f43398bc239fb88834666583092ca7e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 66f79ebe81c99c19faa43ab1b24995a6
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 3c336e31a9faf0d9782ec0939fb96923
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 2529746b81fe9841454189c7a6af4dd0
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://mahara.ulcc.ac.uk/view/artefact.php?artefact=15677&view=4226
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://www.sicanta.com/lightbox/images/winterjacket.aspx
+Warning[105]: DomainFilter Failed: http://www.sicanta.com/lightbox/images/winterjacket.aspx
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 7ccaccf545551ab89e0529fc3670a3ff
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 942dcc6ce9daf84f1829a0938df31f74
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: eb574604788850525d923d1aca09e65a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ce9060e75ec5da434ac6f86e3dd91418
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 2bc15318b612582809ba0db0a188826c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 78e9a5f9a952e37658dcbdbc41a60228
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 370ff2fc013982ed6b68a777cae9f64d
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 7529ad0155353c1729b03c14f3b75f89
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 3c3c35020d13af8bca82c0e6ef80d1af
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 3d4bee82747402a1180d3aae4283b573
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 546634db4668e729edce854fbcc9f3cb
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 90535a7b90580eb12b3005050277581f
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: e90cf1bf67f8b65907750cbb28f587bd
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 66e6e658f2123afb04af211c939c32be
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: aca713659d959868a63ecc6a1a387877
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c0a70cb81beafe0120868ad98af6e058
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c49d6333259d28d8b7d56c80b4d472a7
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 5e27a890667104e34d8011cfa8580095
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 098d2dabe79cdbb029a595745c942c83
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: dbad1c4e94ac34192de91bc9f6761bc5
+Warning[105]: DomainFilter Failed: http://www.centos.org/
+Warning[105]: DomainFilter Failed: http://www.ubuntu.com/download/server
+Warning[105]: DomainFilter Failed: http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29
+Waring[97]: UrlFilter Failed: http://blogxtu.zapto.org/wp-content/uploads/2013/12/Screenshot-from-2013-12-14-070827.png
+Waring[97]: UrlFilter Failed: http://blogxtu.zapto.org/wp-content/uploads/2013/12/Screenshot-from-2013-12-14-071536.png
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Waring[97]: UrlFilter Failed: http://wordpress.org/latest.zip
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://theviralfranchise.com/?zippo85
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://goo.gl/9UWrRB
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://x.co/3cIR8
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://itscarymazegame.com
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://olarian.wordpress.com/tag/maradona/
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: fc71910dc2918115ebe8b0b5615a2959
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 72644e48bd20270269a2da853fb63793
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 39e1a252b06e0e86cfb5e8dcc43839d9
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: a1cedb93bc5fb53c71a32197400a6343
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: b38440ca6d4f72662b9311fc4cf8cb7b
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: b11e055590d2344d30ef5f17babc1f46
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 81d29518af9155127c911412fe9fa647
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 97c0dab26156f450a31c85be54edf6fe
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 9feb18e898f2a67b070c6eee5c26b95a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 5ba136f193fe3811ea277c487da4ea65
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 7670ccd82f5ad74b6f648e8261f6b1f5
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 30fa4ca405d19b584e82665f436989e4
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ce46ca37230d24c4b1d853a5ea03269c
+Warning[105]: DomainFilter Failed: http://webopedia.com/TERM/S/SSL.html
+Warning[105]: DomainFilter Failed: http://webopedia.com/TERM/T/TLS.html
+Warning[105]: DomainFilter Failed: http://webopedia.com/TERM/S/SSH.html
+Warning[105]: DomainFilter Failed: http://openssl.org/
+Warning[105]: DomainFilter Failed: http://webopedia.com/TERM/R/RSA.html
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: e9a22dd98eb33dd5f819c4e29711b617
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 9ab66aba7a10be100ebe3fd7bf647c4b
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: e505cdeed19209ec39de6dddc527c90b
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c8c22374454aaa397d88674a1cf1571c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: e5a740395bcc676a539afcd15835998d
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: acebd2715c66411d667b6de64dedd00c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 73102420faa4d49f6c7e11ca220411ff
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 234b53852062a48188149e9c97b6f296
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20140218
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20140223
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 59975c2b0d4f9fdacc1c696661ad62ae
+Unvisited Inserted: http://blogxtu.zapto.org#content
+Warning[105]: DomainFilter Failed: http://www.java.com/
+Warning[105]: DomainFilter Failed: http://www.apache.org/
+Warning[105]: DomainFilter Failed: http://www.youtube.com
+Warning[105]: DomainFilter Failed: http://www.facebook.com/
+Warning[105]: DomainFilter Failed: http://www.google.com
+Warning[105]: DomainFilter Failed: http://www.ubuntu.com/
+Warning[105]: DomainFilter Failed: http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-i586.tar.gz?AuthParam=1393160353_b57ea8ab0883145b26ec8264dd36cdbb
+Warning[105]: DomainFilter Failed: http://www.eclipse.org/
+Warning[105]: DomainFilter Failed: http://netbeans.org
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 616d9b8579cbf12d682138aed318cfc2
+Unvisited Inserted: http://blogxtu.zapto.org/?m=201312&paged=2
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131208
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131212
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131213
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131214
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131215
+Unvisited Inserted: http://blogxtu.zapto.org/?m=20131216
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 75f9a190755a6e64912287493b95d0b7
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Unvisited Inserted: http://blogxtu.zapto.org/wp-login.php?action=lostpassword
+Saved file: 22576273a9ca685b8cde0cf71c688cc2
+Warning[90]: parsedLinks equal 0
+Saved file: c775b5864f2bababe1e051348962831c
+Warning[90]: parsedLinks equal 0
+Saved file: 4be37cb49df81cece7c419597bc01126
+Warning[105]: DomainFilter Failed: http://www.digicert.com/csr-creation.htm
+Warning[105]: DomainFilter Failed: http://www.digicert.com/ssl-certificate-installation.htm
+Waring[97]: UrlFilter Failed: http://blogxtu.zapto.org/wp-content/uploads/2013/12/certificate101.png
+Waring[97]: UrlFilter Failed: http://blogxtu.zapto.org/wp-content/uploads/2013/12/certificate2.png
+Warning[105]: DomainFilter Failed: http://www.digicert.com/ev-ssl-certification.htm
+Waring[97]: UrlFilter Failed: http://blogxtu.zapto.org/wp-content/uploads/2013/12/certificate3.jpg
+Warning[105]: DomainFilter Failed: http://www.digicert.com/ssl-certificate.htm
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ac986a8d75ab07ae8b935703df2136c7
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c4747b82427f884423b795f513017fa6
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 82c03f691ba54b86c780530ac7c9129c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ca704870be43a034ef15d982385db9c5
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: c4b262f2dcf462127ff5cdeab89de04b
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 6717f4916a5dee6daed31017d913fbcb
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 52f0c06eb7c65da3f29e6dfc9e7df704
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 43cd5d8ad1e7b107c09cc6f3d407158c
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 5582ea59c87585f2926dbd2d3b4476d9
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: ec4d58315da9cf19cbfa47946127e1ed
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 42e9cae74fffd2dbb2d427cee31901b9
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 585d4f4e55ad65ba565578b3b77f0526
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 0e43e769f0d9c7db4f91f76013c8a00a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 132b1fcaa2d22e74b62ca4a5fa56285e
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 59912e269787404781fc901e7a025325
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: cea7fdfe69de981e22e37c67d352c6b9
+Warning[105]: DomainFilter Failed: http://www.java.com/
+Warning[105]: DomainFilter Failed: http://www.apache.org/
+Warning[105]: DomainFilter Failed: http://www.youtube.com
+Warning[105]: DomainFilter Failed: http://www.facebook.com/
+Warning[105]: DomainFilter Failed: http://www.google.com
+Warning[105]: DomainFilter Failed: http://www.ubuntu.com/
+Warning[105]: DomainFilter Failed: http://download.oracle.com/otn-pub/java/jdk/7u51-b13/jdk-7u51-linux-i586.tar.gz?AuthParam=1393160353_b57ea8ab0883145b26ec8264dd36cdbb
+Warning[105]: DomainFilter Failed: http://www.eclipse.org/
+Warning[105]: DomainFilter Failed: http://netbeans.org
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Waring[97]: UrlFilter Failed: 
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: cab9abeaecd7f97b790797791e76173a
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f9b18174c63fd9685987680c99fa4659
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: f1fcd5a698624a1fd9b2fcd31e48c8b2
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 1cfbeb29c2a227c055d3c726a13f42f1
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 08ce22697e590c2ce9d334f3d1292774
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 6af984bcc4142d5a45d7ed86741067eb
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: 07a49b51793ca6bf079426c99d60c7f5
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Saved file: decc8a275652108882658a4a3857fd31
+Warning[105]: DomainFilter Failed: http://wordpress.org/
+Main:main Warning No urls available in unvisited table
