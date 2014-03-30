@@ -74,3 +74,9 @@ standarlize the project using package manager of Java. thats enough
 for today. oh, after a searching around, i found that MongoDB dont
 support transactions as MySQL does, so without transactions, I cant
 gurateen the efficiency of the distributed crawling.
+
+30/Mar/2014
+Well, the distributed crawling didnt implemented yet, temp put it
+aside, I am gonna to start processing the data. first, is write a
+Perl script that will split the downloaded data into head and contents
+Second, parse the contents get all of the plain text in it.
