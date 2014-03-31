@@ -1,0 +1,383 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_cryptography_101
+Manually_install_Sun_JDK_on_Ubuntu_Linux_→
+****** Cryptology 102 — Substitution ******
+Posted on February_18,_2014 by Archer_Reilly
+***** What is substitution in Cryptology? *****
+well, there are mainly two categories in cryptology, one is classical, the
+other is contemporary. and substitution belongs to classical cryptology.
+substituion is a little like one to one relationship in function. every
+character in the plain text will be replaced by another character — crypted
+character. for example, use crypted character a to represent plain character b,
+use crypted char b represent plain char c, etc, thus, if you have a plain text
+namely “abcd“, it will be “zabc“. the relationship in the example is like this:
+abcdefghijklmnopqrstuvwxyz
+zabcdefghijklmnopqrstuvwxy
+as you can see, if you can shift one position, then you can shift as many as
+you want.
+in a word, substitution is use one char in a char set replace another char in
+another char set, and this replace relationship is one to one.
+***** How to implement the substitution in Python? *****
+Here only consider the alphabetical characters. use two list represent the
+plain text character set and the crypted character set. i.e.
+plainSet = ['a', 'b', ..., 'y', 'z']
+crypteSet = ['z', 'a', ..., 'x', 'y']
+then if you have a plain text “hello blogxtu”, then for each character in the
+plain text, use correspond crypte char represent it. and then you will get a
+crypted text “gckkn aknfwsq”.
+“hello blogxtu” ==>”gckkn aknfwsq”
+here is the source code of the implementation by python:
+#!/usr/bin/env python
+#
+# Author: Archer Reilly
+# Date: 22/Feb/2014
+# File: substitution.py
+# Des: this file is used to implement substituion in cryptology.
+#
+# Produced By CSRGXTU
+
+import string
+
+# Des: function substitute is used to substitute the plain text
+#		with crypted text.
+#
+# @param plainText, offset
+# @return cryptText
+def substitute(plainText, offset):
+	# check parameters first
+	cryptText = "";
+
+	# plain code table and crypted code table
+	plainCode = list(string.ascii_lowercase);
+	cryptCode = [];
+	cryptCode[0:offset] = plainCode[-offset:len(plainCode)];
+	cryptCode[offset:len(plainCode)] = plainCode[0:-offset];
+
+	# substitute
+	for char in plainText:
+		# test if char in 26 english chars
+		if (any(char == item for item in plainCode)):
+			cryptText += cryptCode[plainCode.index(char)];
+		else:
+			cryptText += char;
+
+	return cryptText;
+
+# Des: function unsubstitute is used to un substitute the crypted text
+#		into plain text
+#
+# @param cryptText, offset
+# @return plainText
+def unsubstitute(cryptText, offset):
+	# check parameter first
+	plainText = "";
+
+	# build coding table
+	plainCode = list(string.ascii_lowercase);
+	cryptCode = [];
+	cryptCode[0:offset] = plainCode[-offset:len(plainCode)];
+	cryptCode[offset:len(plainCode)] = plainCode[0:-offset];
+
+	# un substitute
+	for char in cryptText:
+		# test if char in 26 english chars
+		if (any(char == item for item in cryptCode)):
+			plainText += plainCode[cryptCode.index(char)];
+		else:
+			plainText += char;
+
+	return plainText;
+
+# Testing
+print substitute("welcome to csrgxtu", 24);
+print unsubstitute(substitute("welcome to csrgxtu", 24), 24);
+and here is the implementation by Java:
+//*******************************************************************
+// Author: Archer Reilly
+// Date: 24/Feb/2014
+// File: Substitution.java
+// Des: this file is used to implement the substitution in cryptology
+//
+// Produced By CSRGXTU
+//*******************************************************************
+
+public class Substitution {
+	/**
+	 * plainText is the variable that contains the original text before
+	 * encrypt.
+	 */	
+	private String plainText;
+
+	/**
+	 * cryptText is the variable that contains the encrypted text after
+	 * encrypt.
+	 */
+	private String cryptText;
+
+	/**
+	 * plainCode is the first part of the code table that contains the
+	 * the plain character, it needs to be work with cryptCode.
+	 */
+	private char[] plainCode = new char[26];
+
+	/**
+	 * cryptCode is the second part of the code table that contains the
+	 * crypted character, it needs to be work with plainCode.
+	 */
+	private char[] cryptCode = new char[26];
+
+	/**
+	 * offset is the length u wana shift between cryptCode and
+	 * plainCode.
+	 */
+	private int offset;
+
+	/**
+	 * constructor responsible initialize the class properties.
+	 *
+	 * @param plainText
+	 * @param offset
+	 */
+	Substitution(String plainText, int offset) {
+		// First, check out the parameter
+		if (plainText == null || offset == 0) {
+			throw new IllegalArgumentException("plainText or offset not "
+				+ "found!");
+		}
+
+		// Second, initialize
+		this.plainText = plainText;
+		this.cryptText = "";
+		this.plainCode = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+		this.offset = offset;
+		char[] tmpa = new char[offset];
+		char[] tmpb = new char[26 - offset];
+		int j = 0;
+		for (int i = (plainCode.length - offset);
+			i < plainCode.length; i++) {
+			tmpa[j] = plainCode[i];
+			j++;
+		}
+		for (int i = 0; i < (plainCode.length - offset); i++) {
+			tmpb[i] = plainCode[i];
+		}
+
+		for (int i = 0; i < tmpa.length; i++) {
+			cryptCode[i] = tmpa[i];
+		}
+		j = tmpa.length;
+		for (int i = 0; i < tmpb.length; i++) {
+			cryptCode[j] = tmpb[i];
+			j++;
+		}
+
+		// debuging
+		/*for (int i = 0; i < cryptCode.length; i++) {
+			System.out.print(cryptCode[i]);
+		}*/
+	}
+
+	/**
+	 * substitute is used to replace the character in plainText with
+	 * the character in cryptCode table.
+	 */
+	public void substitute() {
+		// convert the code table into string, for string has a lot of
+		// method i can use
+		String tmpa = new String(this.plainCode);
+		String tmpb = new String(this.cryptCode);
+		String res = "";
+
+		for (char ch : this.plainText.toCharArray()) {
+			// if ch not in the code table, do nothing about this ch
+			if (tmpa.indexOf(ch) != -1) {
+				res += tmpb.charAt(tmpa.indexOf(ch));
+			} else {
+				res += ch;
+			}
+		}
+		this.cryptText = res;
+	}
+
+	/**
+	 * unsubstitute is used to replace the character in the cryptText
+	 * with the character in plainCode talbe, this method works as
+	 * company with substitute.
+	 */
+	public void unsubstitute() {
+		String tmpa = new String(this.plainCode);
+		String tmpb = new String(this.cryptCode);
+		String res = "";
+
+		for (char ch : this.cryptText.toCharArray()) {
+			if (tmpb.indexOf(ch) != -1) {
+				res += tmpa.charAt(tmpb.indexOf(ch));
+			} else {
+				res += ch;
+			}
+		}
+
+		this.plainText = res;
+	}
+
+	public String getPlainText() {
+		return this.plainText;
+	}
+
+	public void setPlainText(String plainText) {
+		this.plainText = plainText;
+	}
+
+	public String getCryptText() {
+		return this.cryptText;
+	}
+
+	// maybe not provide this method
+	public void setCryptText(String cryptText) {
+		this.cryptText = cryptText;
+	}
+
+	public char[] getPlainCode() {
+		return this.plainCode;
+	}
+
+	public void setPlainCode(char[] plainCode) {
+		this.plainCode = plainCode;
+	}
+
+	public char[] getCryptCode() {
+		return this.cryptCode;
+	}
+
+	public void setCryptCode(char[] cryptCode) {
+		this.cryptCode = cryptCode;
+	}
+
+	public int getOffset() {
+		return this.offset;
+	}
+
+	public void setOffset(int offset) {
+		this.offset = offset;
+	}
+
+	// Test main method
+	public static void main(String[] args) {
+		Substitution obj = new Substitution("csrgxtu", 3);
+		obj.substitute();
+		System.out.println(obj.getCryptText());
+		obj.unsubstitute();
+		System.out.println(obj.getPlainText());
+	}
+}
+ 
+I know this isn’t perfect here, there still lot of thing to do, but you are
+welcomed to comment this post.
+VN:F [1.9.22_1171]
+please wait...
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+Cryptology 102 -- Substitution, 8.0 out of 10 based on 1 rating
+This entry was posted in Cryptography, Java, Linux, Program, Python and tagged
+blogxtu, cryptography, cryptology, cryptology_substitution, csrgxtu_cryptology,
+csrgxtu_java_crypt, java, java_cryptology, python_cryptology, substitution,
+substitution_implemnetation. Bookmark the permalink.
+←_cryptography_101
+Manually_install_Sun_JDK_on_Ubuntu_Linux_→
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

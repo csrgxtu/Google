@@ -1,0 +1,164 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_Cryptology_102_—_Substitution
+****** Manually install Sun JDK on Ubuntu Linux ******
+Posted on February_23,_2014 by Archer_Reilly
+***** A little word about Java *****
+Java is a programming language originally developed by Sun Corporation, it is
+objecte orinted. it is very easy to get to use, but it is not good at
+performance. still Java is a popular programming language around the world,
+especially in China. I have seen there are a lot of not much clever programmers
+who learns Java everyday. Not for the popular of the Apache_Foundation, I won’t
+take time to learn this crap.(apologise for my rudeness, It is not Java itself
+sometimes, it is because I have seen too much Chinese stick into Java, use Java
+develop everything, as far as know, that the YouTube, Facebook, Google are not
+implemented by Java, but I don’t know what’s going on in my country, everybody
+stick into Java!)
+***** Why I write this post to illustrate how to install Java manually? *****
+Well, if you are using Ubuntu as your working environment, then it is pretty
+easy to install Java. you can type javac and javaÂ in the terminal, and the
+Ubuntu system will give you a hint on how to install Java quickly, like
+following:
+archer@csrgxtu3:~$ java
+The program 'java' can be found in the following packages:
+ * default-jre
+ * gcj-4.6-jre-headless
+ * openjdk-6-jre-headless
+ * gcj-4.5-jre-headless
+ * openjdk-7-jre-headless
+Try: sudo apt-get install  <selected package>
+If you do as what the system indicates you, this is ok, the apt package manager
+will spread the installed package around your system. but this way isn’t good
+if you reinstall your system, for you will need to reinstall Java after you
+reinstalling the system. I am a big fan of the Linux operating system, I try
+different Linux distributions from time to time, means I need to reinstall Java
+everytime. so I decided this time install the JDK into my home(data) partions,
+thus everytime i install a new system, i won’t need to reinstall Java(home
+partions contains all of the user data, so I don’t format this partion when i
+install a new system).
+***** How to manually install? *****
+First, you need to download the jdk file from Oracle’s website. click here to
+download the package.(note: if you are in 64 bit systems, please download the
+64 bit version jdk, i am assuming you are using 32 bit machine).
+jdk-7u51-linux-i586.tar.gz
+Second, untar the downloaded file.
+tar xvf jdk-7u51-linux-i586.tar.gz
+ 
+Third, edit the .bashrc file to add the environment PATH
+# Add for jdk manual install
+PATH="$HOME/bin/jdk1.7.0_45/bin:$PATH"
+ 
+Fouth, make PATH take effect.
+ source /home/$USER/.bashrc
+now, the java is installed on your system, you can type following command to
+verify that.
+which java
+if upper command is ok, then it should outputs the path where java command
+locates.
+To be honest, I like working in the terminal, but when you program Java, you
+need a IDE, for instance, eclipse or netbeans. but when you use this IDE, it
+take too much CPU load. I want to say that i will stick with terminal, and i
+found it just worked fine until now.
+VN:D [1.9.22_1171]
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+Manually install Sun JDK on Ubuntu Linux, 8.0 out of 10 based on 1 rating
+This entry was posted in Java, Linux, OS and tagged blogxtu, blogxtu_oop,
+csrgxtu, java_install, java_manul_install, ubuntu_install, ubuntu_java.
+Bookmark the permalink.
+←_Cryptology_102_—_Substitution
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

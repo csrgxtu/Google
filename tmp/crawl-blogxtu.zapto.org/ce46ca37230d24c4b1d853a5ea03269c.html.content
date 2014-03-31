@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Do It Yourself SSL Guide Part 1: An Introduction | blogxtu</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blogxtu.zapto.org/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://blogxtu.zapto.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; Feed" href="http://blogxtu.zapto.org/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; Comments Feed" href="http://blogxtu.zapto.org/?feed=comments-rss2" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; Do It Yourself SSL Guide Part 1: An Introduction Comments Feed" href="http://blogxtu.zapto.org/?feed=rss2&#038;p=86" />
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1386832166&#038;s=a10i10m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://blogxtu.zapto.org/wp-content/gd-star-rating/css/rating.css?ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-css'  href='http://blogxtu.zapto.org/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css?ver=3.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.22'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-includes/js/comment-reply.min.js?ver=3.7.1'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js?ver=2.1.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogxtu.zapto.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogxtu.zapto.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='What Is SSL (Secure Sockets Layer) and What Are SSL Certificates?' href='http://blogxtu.zapto.org/?p=76' />
+<link rel='next' title='Foreiners Learning Chinese' href='http://blogxtu.zapto.org/?p=112' />
+<meta name="generator" content="WordPress 3.7.1" />
+<link rel='canonical' href='http://blogxtu.zapto.org/?p=86' />
+<link rel='shortlink' href='http://blogxtu.zapto.org/?p=86' />
+<script type="text/javascript" src="http://blogxtu.zapto.org/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blogxtu.zapto.org/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"80",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "bd63f7f05b";
+var gdsr_cnst_ajax = "http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 1;
+var gdsr_cnst_cache = 0;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+
+		<script type="text/javascript">
+			videojs.options.flash.swf = "http://blogxtu.zapto.org/wp-content/plugins/videojs-html5-video-player-for-wordpress/videojs/video-js.swf";
+		</script>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f1f1f1; background-image: url('http://blogxtu.zapto.org/wp-content/uploads/2013/12/keyboardwallpaper.jpg'); background-repeat: repeat; background-position: top center; background-attachment: fixed; }
+</style>
+</head>
+
+<body class="single single-post postid-86 single-format-standard custom-background">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://blogxtu.zapto.org/" title="blogxtu" rel="home">blogxtu</a>
+					</span>
+				</div>
+				<div id="site-description">Ideas change us, then changes the world!</div>
+
+										<img src="http://blogxtu.zapto.org/wp-content/uploads/2013/12/copy-site-header.jpg" width="940" height="198" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu-header"><ul id="menu-menu-1" class="menu"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5"><a href="http://blogxtu.zapto.org/">Home</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-9"><a href="http://blogxtu.zapto.org/?cat=2">OS</a>
+<ul class="sub-menu">
+	<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-10"><a href="http://blogxtu.zapto.org/?cat=3">Linux</a></li>
+	<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="http://blogxtu.zapto.org/?cat=4">Windows</a></li>
+</ul>
+</li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-12"><a href="http://blogxtu.zapto.org/?cat=5">Program</a>
+<ul class="sub-menu">
+	<li id="menu-item-177" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-177"><a href="http://blogxtu.zapto.org/?cat=68">Challenge</a></li>
+	<li id="menu-item-218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-218"><a href="http://blogxtu.zapto.org/?cat=90">Cryptography</a></li>
+	<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a href="http://blogxtu.zapto.org/?cat=10">C</a></li>
+	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a href="http://blogxtu.zapto.org/?cat=11">CPlus</a></li>
+	<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19"><a href="http://blogxtu.zapto.org/?cat=9">Shell</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="http://blogxtu.zapto.org/?cat=7">Perl</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="http://blogxtu.zapto.org/?cat=12">PHP</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="http://blogxtu.zapto.org/?cat=6">Python</a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="http://blogxtu.zapto.org/?cat=8">Java</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-20"><a href="http://blogxtu.zapto.org/?cat=13">Video</a>
+<ul class="sub-menu">
+	<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://blogxtu.zapto.org/?cat=15">Music Video</a></li>
+	<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://blogxtu.zapto.org/?cat=16">Movie</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-89"><a href="http://blogxtu.zapto.org/?cat=37">Chanel</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://blogxtu.zapto.org/?cat=38">Gags</a></li>
+	</ul>
+</li>
+	<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="http://blogxtu.zapto.org/?cat=17">Clip</a></li>
+</ul>
+</li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="http://blogxtu.zapto.org/?cat=14">Life</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://blogxtu.zapto.org/?page_id=24">About</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="http://blogxtu.zapto.org/?cat=18">More</a></li>
+</ul></div>			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://blogxtu.zapto.org/?p=76" rel="prev"><span class="meta-nav">&larr;</span> What Is SSL (Secure Sockets Layer) and What Are SSL Certificates?</a></div>
+					<div class="nav-next"><a href="http://blogxtu.zapto.org/?p=112" rel="next">Foreiners Learning Chinese <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-86" class="post-86 post type-post status-publish format-standard hentry category-linux category-os category-shell tag-apache-ssl tag-blogxtu-https tag-blogxtu-ssl tag-enable-ssl tag-linux-ssl tag-openssl tag-ssl">
+					<h1 class="entry-title">Do It Yourself SSL Guide Part 1: An Introduction</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blogxtu.zapto.org/?p=86" title="1:45 pm" rel="bookmark"><span class="entry-date">December 8, 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blogxtu.zapto.org/?author=2" title="View all posts by Archer Reilly">Archer Reilly</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>Many people want or need to have the connection between the browser and the Web server encrypted, but aren&#8217;t been able to set it up. This guide is intended to help people with the typical Apache on Linux setup to make encrypted connections available with a minimum of fuss, and if the encrypted connection isn&#8217;t for a commercial purpose, to do so without spending a penny.<span id="more-86"></span></p>
+<h2><em>Limitations</em></h2>
+<p>Sometimes hosting providers block the user from setting without upgrading (i.e., pay more money for) the hosting account. Another possibility is that the hosting provider doesn&#8217;t want users to have any hands-on control regardless of which hosting package you have with them. If you have a package that allows full root access or something similar, you&#8217;re unlikely to have any problems. However, it&#8217;s not always necessary to have full access to be able to set it up. In this article are alternatives to the hands-on approach you would use when logged in as root, but the best I can offer are general pointers. This is because most hosting providers offer some sort of control panel for administrative tasks, but this access can vary widely from one hosting provider to another.</p>
+<h2><em>Key Generation</em></h2>
+<p>As some of you might already know, a certificate is needed to enable an encrypted connection. The connection can be encrypted using the Secure Sockets Layer (<a href="http://webopedia.com/TERM/S/SSL.html">SSL</a>) or the Transport Layer Security (<a href="http://webopedia.com/TERM/T/TLS.html">TLS</a>) mechanism, but you don&#8217;t need to worry about which will be used because that will be agreed upon by the browser and Apache. Before we can obtain a certificate file, we must first generate a key file.</p>
+<p>To generate a key file whilst logged in as root via Secure Shell (<a href="http://webopedia.com/TERM/S/SSH.html">SSH</a>), you need to enter the following command (or a variant of it that&#8217;s tailored to your preferences.):</p>
+<p><img alt="Key Generation" src="http://www.webopedia.com/DidYouKnow/Images/keygen.jpg" border="0" /></p>
+<p>I&#8217;ll explain each part of the command. If you&#8217;re forced to use a control panel provided by your hosting provider, you&#8217;ll have a decent idea of what to look for and what to do. Some control panels hide this step from the user and combine this key generation step with the certificate generation step. If you can&#8217;t find any option for generating a key, but have an option for generating certificates, don&#8217;t panic. If you logged in as root, issued this command over SSH and got a message back saying something like: bash: openssl: command not found, then the OpenSSL program isn&#8217;t installed and you either need to install it yourself or have your hosting provider install it for you.</p>
+<p>The first part of the command is the name of the program we&#8217;re using: <a href="http://openssl.org/" target="_blank">OpenSSL</a>. This could be something else to look for on a control panel if you can&#8217;t find keys or certificates. Either OpenSSL or perhaps just SSL. TLS might be another possibility, but an unlikely one.</p>
+<p>Next up is the key type option. The two most popular types of keys are DSA and <a href="http://webopedia.com/TERM/R/RSA.html">RSA</a>. DSA keys are used for digital signatures and aren&#8217;t used for encryption; RSA keys can be used for both digital signatures and encryption. Here, we need to generate an RSA key and you should look out for this option if you&#8217;re using a control panel to generate the key.</p>
+<p>The next two parts are actually a single instruction to OpenSSL. The -out parameter simply indicates that the following text indicates the location of where the file should be placed and what the name of the file should be. When issuing this command via SSH I recommend using an absolute pathname such as: /usr/local/apache2/apache_key.pem so you know exactly where it is once it&#8217;s been created. If you&#8217;re generating the key through a control panel, look for an option for specifying where it should be placed, or look for it telling you where it will be placed. Regardless of which method you use, make sure that it isn&#8217;t placed in a directory where Apache serves Web pages.</p>
+<p>The last option of the command is the size if the key in bits. I use 2048 because it&#8217;s the recommended size based on current technology. You can increase the number to make it more secure if you prefer, but this means that you might take a performance hit when using SSL. A Certificate Authority (CA) might also require that you use a size specified by them, but you don&#8217;t need to worry about CA&#8217;s unless you&#8217;re intending to use SSL for commercial (or similar) purposes.</p>
+<p>Another noteworthy option that&#8217;s not used in the command given above is the -des3 option. It&#8217;s used to add a protecting password to the key. This might sound like a good thing, but for the purposes of SSL in Apache, it&#8217;s not. If you were to use this option, then someone would have to somehow input this password every time an SSL connection is made. If you see an option for this in a control panel section for making keys, don&#8217;t use it.</p>
+<h2><em>Obtaining The Certificate</em></h2>
+<p>Obtaining a certificate similar to those seen on most commercial sites (where they are automatically be trusted by browsers) requires two steps. The first step will be performed by you, but you&#8217;re not able to perform the second step. The CA (such as Verisign or GoDaddy) will perform the last step. The first step is to create what&#8217;s called a Certificate Signing Request (CSR). A CSR is a file that, once signed by a CA, will become your certificate. Here&#8217;s the command to create it:</p>
+<p><img alt="Normal Certificate" src="http://www.webopedia.com/DidYouKnow/Images/normalcert.jpg" border="0" /></p>
+<p>Again, I&#8217;ll give you some information on each part of the command so you can translate this into actions in your control panel or just modify it if you want to change something, but it&#8217;s unlikely you&#8217;ll want to change anything other than the file names.</p>
+<p>The first new command is req. This command is to indicate that we intend to use CSR management. If you&#8217;re using a control panel and you can&#8217;t find anything about a certificate (request) option, try looking for something like CSR (management) instead. The -new option is an obvious one. It simply means that we&#8217;re creating a new CSR rather than doing something to an existing one. The -key option specifies the location of the key file used with the certificate. You must alter this option to point to the location of your key file that you generated earlier in this guide. If you&#8217;re using a control panel you might be given a field in a form to specify the location of the key. If this is the case then do so. However, some popular control panels ask you to copy and paste the key into a text area. How you get the key into your clipboard for pasting in to the text area will depend on what can or cannot do with your host. In my experience the method most likely to be available is to copy the key to your computer, then open it in a text editor. You should use the most secure transfer method available to you, but if you&#8217;re having to do things this way your options are probably quite limited. Trying to open your key file on a Windows PC will almost certainly cause it to tell you that it doesn&#8217;t know what to do with the file. Instead, open the file with Notepad. I&#8217;ve opened the key in Notepad on Windows XP. The key was presented in text form, but it showed my test key over just two lines. Depending on your control panel, it might be OK to paste in the key as Notepad presents it, but you might have to make some changes after you paste it in to make it display correctly. The following is a demonstration of how a 2048 bit key would is often represented in text form:</p>
+<p><img alt="2048 bit key" src="http://www.webopedia.com/DidYouKnow/Images/2048bitkey.jpg" border="0" /></p>
+<p>As you can see, it&#8217;s a block of text with start and end markers on lines of their own at the beginning and end of the key. The main key text appears as 25 lines that, with the exception of the last line, are 64 characters long. A key that has fewer bits will have fewer lines and a key with more bits will have more lines, but the line length stays the same.</p>
+<p>The final part of the command, -out, serves the same purpose here as it did with the command we used to generate the key. Follow the same guideline of giving an absolute pathname (if possible) so you know exactly where it&#8217;s going to be placed.</p>
+<p>Once you have your CSR file you need to find a CA to hand it over to for the second step: signing it. After they&#8217;ve done whatever checks they deem necessary, they&#8217;ll then sign your CSR and give you your new certificate.</p>
+<h2><em>Obtaining A Free Certificate</em></h2>
+<p>If you want to create a certificate of your own without having to involve a CA, you can perform both steps by yourself. This means that the user&#8217;s browser will present them with a huge: This certificate is self-signed! warning, but if this doesn&#8217;t concern you, then it doesn&#8217;t matter. Self-signed certificates can be a cheap alternative to CA signed certificates when you&#8217;re testing things out and experimenting, or if you&#8217;re the only person that needs a secure connection to your host. They can also be good for allowing regular users to use secured connections if they know they can trust you and you warn them about the certificate warnings in advance.</p>
+<p>Here, the process of creating the CSR and having it signed are merged into one so you don&#8217;t create the CSR file. Instead, you just generate the certificate file directly. The following is a command to generate a self-signed certificate:</p>
+<p><img alt="Obtaining a Free Certificate" src="http://www.webopedia.com/DidYouKnow/Images/freecert.jpg" border="0" /></p>
+<p>As you can see, it&#8217;s similar to the other command for creating a CSR that you would have signed by a CA, but it has two more options than the previous one. The first of the extra options is the -x509 option. This is the option that tells OpenSSL to output a self-signed certificate instead of a CSR. If you&#8217;re using a control panel to create a self-signed certificate be sure to look for, and use, an x509 option. The second of the extra options is the -days option. This option simply specifies how long (in days) the certificate is valid. Once the number of days has passed, you should generate a new certificate file and dispose of the old one.</p>
+<div style="display: none">VN:F [1.9.22_1171]</div><div class="ratingblock "><div class="ratingheader "></div><div class="ratingstars "><div id="article_rater_86" class="ratepost gdsr-oxygen gdsr-size-24"><div class="starsbar gdsr-size-24"><div class="gdouter gdheight"><div id="gdr_vote_a86" style="width: 0px;" class="gdinner gdheight"></div><div id="gdr_stars_a86" class="gdsr_rating_as"><a id="gdsrX86X10X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="10 / 10" class="s10" rel="nofollow"></a><a id="gdsrX86X9X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="9 / 10" class="s9" rel="nofollow"></a><a id="gdsrX86X8X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="8 / 10" class="s8" rel="nofollow"></a><a id="gdsrX86X7X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="7 / 10" class="s7" rel="nofollow"></a><a id="gdsrX86X6X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="6 / 10" class="s6" rel="nofollow"></a><a id="gdsrX86X5X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="5 / 10" class="s5" rel="nofollow"></a><a id="gdsrX86X4X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="4 / 10" class="s4" rel="nofollow"></a><a id="gdsrX86X3X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="3 / 10" class="s3" rel="nofollow"></a><a id="gdsrX86X2X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="2 / 10" class="s2" rel="nofollow"></a><a id="gdsrX86X1X0XaXarticle_rater_86Xarticle_loader_86X0X24" title="1 / 10" class="s1" rel="nofollow"></a></div></div></div></div><div id="article_loader_86" style="display: none; width: 240px " class="ratingloaderarticle"><div class="loader flower " style="height: 24px"><div class="loaderinner" style="padding-top: 2px">please wait...</div></div></div></div><div class="ratingtext "><div id="gdr_text_a86">Rating: 0.0/<strong>10</strong> (0 votes cast)</div></div></div><div style="display: none">VN:F [1.9.22_1171]</div><div class="thumblock "><div id="gdsr_thumb_86_a_up" class="gdt-size-20 gdthumb gdup"><a id="gdsrX86XupXaX0X20XY" class="gdt-starrating" rel="nofollow"></a></div><div id="gdsr_thumb_86_a_loader_up" style="display: none; width: 20px " class="ratingloader loadup"><div class="loader flower thumb" style="width: 20px; height: 20px;"></div></div><div id="gdsr_thumb_86_a_dw" class="gdt-size-20 gdthumb gddw"><a id="gdsrX86XdwXaX0X20XY" class="gdt-starrating" rel="nofollow"></a></div><div id="gdsr_thumb_86_a_loader_dw" style="display: none; width: 20px " class="ratingloader loaddw"><div class="loader flower thumb" style="width: 20px; height: 20px;"></div></div><div class="ratingtext "><div id="gdsr_thumb_text_86_a" class="gdt-size-20 gdthumbtext">Rating: <strong>0</strong> (from 0 votes)</div></div><div class="raterclear"></div></div>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://blogxtu.zapto.org/?cat=3" title="View all posts in Linux" rel="category">Linux</a>, <a href="http://blogxtu.zapto.org/?cat=2" title="View all posts in OS" rel="category">OS</a>, <a href="http://blogxtu.zapto.org/?cat=9" title="View all posts in Shell" rel="category">Shell</a> and tagged <a href="http://blogxtu.zapto.org/?tag=apache-ssl" rel="tag">apache ssl</a>, <a href="http://blogxtu.zapto.org/?tag=blogxtu-https" rel="tag">blogxtu https</a>, <a href="http://blogxtu.zapto.org/?tag=blogxtu-ssl" rel="tag">blogxtu ssl</a>, <a href="http://blogxtu.zapto.org/?tag=enable-ssl" rel="tag">enable ssl</a>, <a href="http://blogxtu.zapto.org/?tag=linux-ssl" rel="tag">linux ssl</a>, <a href="http://blogxtu.zapto.org/?tag=openssl" rel="tag">openssl</a>, <a href="http://blogxtu.zapto.org/?tag=%e5%bc%80%e5%90%afssl" rel="tag">开启ssl</a>. Bookmark the <a href="http://blogxtu.zapto.org/?p=86" title="Permalink to Do It Yourself SSL Guide Part 1: An Introduction" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://blogxtu.zapto.org/?p=76" rel="prev"><span class="meta-nav">&larr;</span> What Is SSL (Secure Sockets Layer) and What Are SSL Certificates?</a></div>
+					<div class="nav-next"><a href="http://blogxtu.zapto.org/?p=112" rel="next">Foreiners Learning Chinese <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/?p=86#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://blogxtu.zapto.org/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='86' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+											</form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://blogxtu.zapto.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="calendar-2" class="widget-container widget_calendar"><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>March 2014</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://blogxtu.zapto.org/?m=201402" title="View posts for February 2014">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
+	</tr>
+	<tr>
+		<td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td>24</td><td>25</td><td>26</td><td>27</td><td id="today">28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=231">Manually install Sun JDK on Ubuntu Linux</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=225">Cryptology 102 &#8212; Substitution</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=215">cryptography 101</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=212">Programming challenge: Largest product in a series</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=205">Programming Challenge: nst prime</a>
+						</li>
+				</ul>
+		</li><li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=215#comment-25">cryptography 101</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=215#comment-24">cryptography 101</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=205#comment-22">Programming Challenge: nst prime</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=167#comment-21">Blogxtu SEO 101 &#8212; Install WordPress In Lamp</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=167#comment-20">Blogxtu SEO 101 &#8212; Install WordPress In Lamp</a></li></ul></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://blogxtu.zapto.org/?m=201402'>February 2014</a></li>
+	<li><a href='http://blogxtu.zapto.org/?m=201312'>December 2013</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-68"><a href="http://blogxtu.zapto.org/?cat=68" title="this sub category contains some programming challenges, you can use whatever language to implement the problem.">Challenge</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="http://blogxtu.zapto.org/?cat=90" title="the sub category contains post about cryptography">Cryptography</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://blogxtu.zapto.org/?cat=8" title="sub category related to Java programming language.">Java</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://blogxtu.zapto.org/?cat=14" title="category contains some life things">Life</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blogxtu.zapto.org/?cat=3" title="sub category related to Linux Operating systems">Linux</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://blogxtu.zapto.org/?cat=15" title="sub category  contains mv videos">Music Video</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://blogxtu.zapto.org/?cat=2" title="category related to Operating Systems.">OS</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blogxtu.zapto.org/?cat=5" title="category related programming things">Program</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blogxtu.zapto.org/?cat=6" title="sub category related to Python program">Python</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://blogxtu.zapto.org/?cat=9" title="sub category related to shell programming language">Shell</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blogxtu.zapto.org/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://blogxtu.zapto.org/?cat=13" title="category contains videos">Video</a>
+</li>
+		</ul>
+</li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://blogxtu.zapto.org/wp-login.php">Log in</a></li>
+			<li><a href="http://blogxtu.zapto.org/?feed=rss2" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://blogxtu.zapto.org/?feed=comments-rss2" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://blogxtu.zapto.org/" title="blogxtu" rel="home">
+					blogxtu				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

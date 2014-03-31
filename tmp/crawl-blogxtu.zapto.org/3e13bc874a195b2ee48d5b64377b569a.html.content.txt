@@ -1,0 +1,333 @@
+
+
+
+
+
+
+
+
+
+
+
+******  blogxtu  ******
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_Older_posts
+***** Manually_install_Sun_JDK_on_Ubuntu_Linux *****
+Posted on February_23,_2014 by Archer_Reilly
+***** A little word about Java *****
+Java is a programming language originally developed by Sun Corporation, it is
+objecte orinted. it is very easy to get to use, but it is not good at
+performance. still Java is a popular programming language around the world,
+especially in China. I have seen there are a lot of not much clever programmers
+who learns Java everyday. Not for the popular of the Apache_Foundation, I won’t
+take time to learn this crap.(apologise for my rudeness, It is not Java itself
+sometimes, it is because I have seen too much Chinese stick into Java, use Java
+develop everything, as far as know, that the YouTube, Facebook, Google are not
+implemented by Java, but I don’t know what’s going on in my country, everybody
+stick into Java!)
+***** Why I write this post to illustrate how to install Java manually? *****
+Well, if you are using Ubuntu as your working environment, then it is pretty
+easy to install Java. you can type javac and javaÂ in the terminal, and the
+Ubuntu system will give you a hint on how to install Java quickly, like
+following:
+archer@csrgxtu3:~$ java
+The program 'java' can be found in the following packages:
+ * default-jre
+ * gcj-4.6-jre-headless
+ * openjdk-6-jre-headless
+ * gcj-4.5-jre-headless
+ * openjdk-7-jre-headless
+Try: sudo apt-get install  <selected package>
+If you do as what the system indicates you, this is ok, the apt package manager
+will spread the installed package around your system. but this way isn’t good
+if you reinstall your system, for you will need to reinstall Java after you
+reinstalling the system. I am a big fan of the Linux operating system, I try
+different Linux distributions from time to time, means I need to reinstall Java
+everytime. so I decided this time install the JDK into my home(data) partions,
+thus everytime i install a new system, i won’t need to reinstall Java(home
+partions contains all of the user data, so I don’t format this partion when i
+install a new system).
+***** How to manually install? *****
+First, you need to download the jdk file from Oracle’s website. click here to
+download the package.(note: if you are in 64 bit systems, please download the
+64 bit version jdk, i am assuming you are using 32 bit machine).
+jdk-7u51-linux-i586.tar.gz
+Second, untar the downloaded file.
+tar xvf jdk-7u51-linux-i586.tar.gz
+ 
+Third, edit the .bashrc file to add the environment PATH
+# Add for jdk manual install
+PATH="$HOME/bin/jdk1.7.0_45/bin:$PATH"
+ 
+Fouth, make PATH take effect.
+ source /home/$USER/.bashrc
+now, the java is installed on your system, you can type following command to
+verify that.
+which java
+if upper command is ok, then it should outputs the path where java command
+locates.
+To be honest, I like working in the terminal, but when you program Java, you
+need a IDE, for instance, eclipse or netbeans. but when you use this IDE, it
+take too much CPU load. I want to say that i will stick with terminal, and i
+found it just worked fine until now.
+VN:D [1.9.22_1171]
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Java, Linux, OS
+ |  Tagged blogxtu, blogxtu_oop, csrgxtu, java_install, java_manul_install,
+ubuntu_install, ubuntu_java
+ | Leave_a_comment
+***** Cryptology_102_—_Substitution *****
+Posted on February_18,_2014 by Archer_Reilly
+***** What is substitution in Cryptology? *****
+well, there are mainly two categories in cryptology, one is classical, the
+other is contemporary. and substitution belongs to classical cryptology.
+substituion is a little like one to one relationship in function. every
+character in the plain text will be replaced by another character — crypted
+character. for example, use crypted character a to represent plain character b,
+use crypted char b represent plain char c, etc, thus, Continue_reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Cryptography, Java, Linux, Program, Python
+ |  Tagged blogxtu, cryptography, cryptology, cryptology_substitution, csrgxtu
+cryptology, csrgxtu_java_crypt, java, java_cryptology, python_cryptology,
+substitution, substitution_implemnetation
+ | Leave_a_comment
+***** cryptography_101 *****
+Posted on December_16,_2013 by Archer_Reilly
+***** Preface *****
+I always think it will be cool to hide your message with cryptography, what’s
+more is that even though the others got your message, he still can not get what
+you trying to say, because the message he get is a messed up information that
+is useless for him.
+I always think it will be cool to speack a language that is loud and quick, and
+when you speack it, nobody understands what you are saying. but this one comes
+to the other languages.
+In this series of articles, i am gonna to illustrate the concept of the
+cryptography and the implementation. more on implementation precisely.
+cryptography is a field that is full of interesting things, and a lot of
+tricks. so let’s get started. Continue_reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 7.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Cryptography, Linux, Python
+ |  Tagged blogxtu, blogxtu_cryptography, cryptography, cryptography_101,
+csrgxtu, csrgxtu_cryptography, decoding, encode_string
+ | 5_Comments
+***** Programming_challenge:_Largest_product_in_a_series *****
+Posted on December_15,_2013 by Archer_Reilly
+***** Problem description *****
+Find the greatest product of five consecutive digits in the 1000-digit number.
+73167176531330624919225119674426574742355349194934
+96983520312774506326239578318016984801869478851843
+85861560789112949495459501737958331952853208805511
+12540698747158523863050715693290963295227443043557
+66896648950445244523161731856403098711121722383113
+62229893423380308135336276614282806444486645238749
+30358907296290491560440772390713810515859307960866
+70172427121883998797908792274921901699720888093776
+65727333001053367881220235421809751254540594752243
+52584907711670556013604839586446706324415722155397
+53697817977846174064955149290862569321978468622482
+83972241375657056057490261407972968652414535100474
+82166370484403199890008895243450658541227588666881
+16427171479924442928230863465674813919123162824586
+17866458359124566529476545682848912883142607690042
+24219022671055626321111109370544217506941658960408
+07198403850962455444362981230987879927244284909188
+84580156166097919133875499200524063689912560717606
+05886116467109405077541002256983155200055935729725
+71636269561882670428252483600823257530420752963450
+VN:F [1.9.22_1171]
+please wait...
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Challenge, Program, Python, Uncategorized
+ |  Tagged blogxtu, blogxtu_programming_challenge, csrgxtu, Largest_product_in
+a_series, python
+ | Leave_a_comment
+***** Programming_Challenge:_nst_prime *****
+Posted on December_15,_2013 by Archer_Reilly
+***** Problem description: *****
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that
+the 6th prime is 13.
+What is the 10 001st prime number? Continue_reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Challenge, Linux, Program, Python
+ |  Tagged blogxtu, blogxtu_programming_challenge, blogxtu_python, csrgxtu,
+programming, programming_challenge, python
+ | 2_Comments
+***** Programming_Challenge:_Sum_Square_Difference *****
+Posted on December_15,_2013 by Archer_Reilly
+***** Problem description *****
+The sum of the squares of the first ten natural numbers is,
+12 + 22 + … + 102 = 385
+The square of the sum of the first ten natural numbers is,
+(1 + 2 + … + 10)2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural
+numbers and the square of the sum is 3025 [â] 385 = 2640.
+Find the difference between the sum of the squares of the first one hundred
+natural numbers and the square of the sum. Continue_reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Challenge, Linux, Program, Python
+ |  Tagged blogxtu, csrgxtu, euler_project, linux, programming_challenge,
+python, sum_square_difference, xtu
+ | Leave_a_comment
+***** Blogxtu_SEO_101_—_Install_WordPress_In_Lamp *****
+Posted on December_14,_2013 by Archer_Reilly
+***** Summary *****
+This Blogxtu SEO serials will show you the way that let the word know your
+website. I will start at the beginning, but assume something basic knowledge
+you already know.
+In this article, I will show you how to install WordPress on Lamp in Ubuntu
+Server 12.04. Continue_reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Linux, OS, Shell, Uncategorized
+ |  Tagged blogxtu, csrgxtu, install_wordpress_ubuntu, own_blog, wordpress,
+wordpress_lamp, wordpress_ubuntu
+ | 9_Comments
+***** test *****
+Posted on December_13,_2013 by csrgxtu
+To let the browser play video is a tedious work, here is a video in two
+formats: MP4 and OGV,Â  if you are using Firefox and Chome, it should be no
+problem, but if you are using IE, then it won’t play, technically IE supports
+MP4, but I don’t know why it doesn’tÂ  Play in thisÂ situation.
+
+
+
+
+VN:F [1.9.22_1171]
+please wait...
+Rating: 8.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: +2 (from 2 votes)
+ Posted in Uncategorized
+ | Leave_a_comment
+***** Foreiners_Learning_Chinese *****
+Posted on December_12,_2013 by Archer_Reilly
+***** This is a note by a America who try to learns Chinese: *****
+Dear Tim:
+shall by too doll doll by too jack won
+dolphin long can Jim shall by too low
+shall by too when dull low, doll car low
+dolphin long doll Ham Eason
+“more power!”
+ç¬¬äºå¤©ï¼
+å°ç½åå°å¤§ç½åå®¶ç©
+å¤§ç°ç¼çè§å°ç½åäº
+å°ç½åé»å°äºï¼èº²å¼äº
+å¤§ç°ç¼å¤§åä¸å£°
+âè«è·ï¼â
+VN:D [1.9.22_1171]
+Rating: 5.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: +1 (from 1 vote)
+ Posted in Life
+ |  Tagged funny, learning_Chinese, shall_by_too, å°ç½å
+ | Leave_a_comment
+***** Do_It_Yourself_SSL_Guide_Part_1:_An_Introduction *****
+Posted on December_8,_2013 by Archer_Reilly
+Many people want or need to have the connection between the browser and the Web
+server encrypted, but aren’t been able to set it up. This guide is intended to
+help people with the typical Apache on Linux setup to make encrypted
+connections available with a minimum of fuss, and if the encrypted connection
+isn’t for a commercial purpose, to do so without spending a penny. Continue
+reading_→
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+ Posted in Linux, OS, Shell
+ |  Tagged apache_ssl, blogxtu_https, blogxtu_ssl, enable_ssl, linux_ssl,
+openssl, å¼å¯ssl
+ | Leave_a_comment
+←_Older_posts
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

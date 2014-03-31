@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_As_Long_As_You_Love_Me_—_Flipped
+Do_It_Yourself_SSL_Guide_Part_1:_An_Introduction_→
+****** What Is SSL (Secure Sockets Layer) and What Are SSL Certificates? ******
+Posted on December_8,_2013 by Archer_Reilly
+***** What Is SSL? *****
+SSL (Secure Sockets Layer) is a standard security technology for establishing
+an encrypted link between a server and a clientâtypically a web server
+(website) and a browser; or a mail server and a mail client (e.g., Outlook).
+SSL allows sensitive information such as credit card numbers, social security
+numbers, and login credentials to be transmitted securely. Normally, data sent
+between browsers and web servers is sent in plain textâleaving you vulnerable
+to eavesdropping. If an attacker is able to intercept all data being sent
+between a browser and a web server they can see and use that information.
+More specifically, SSL is a security protocol. Protocols describe how
+algorithms should be used; in this case, the SSL protocol determines variables
+of the encryption for both the link and the data being transmitted.
+SSL secures millions of peoplesâ data on the Internet every day, especially
+during online transactions or when transmitting confidential information.
+Internet users have come to associate their online security with the lock icon
+that comes with an SSL-secured website or green address bar that comes with an
+extended validation SSL-secured website. SSL-secured websites also begin with
+https rather than http.
+***** Where Do Certificates Come In? *****
+All browsers have the capability to interact with secured web servers using the
+SSL protocol. However, the browser and the server need what is called an SSL
+Certificate to be able to establish a secure connection.
+***** Â What is an SSL Certificate and How Does it Work? *****
+SSL Certificates have a key pair: a public and a private key. These keys work
+together to establish an encrypted connection. The certificate also contains
+what is called the âsubject,â which is the identity of the certificate/
+website owner.
+To get a certificate, you must create_a_Certificate_Signing_Request_(CSR) on
+your server. This CSR creates the private key and a CSR data file that you send
+to the SSL Certificate issuer (called a Certificate Authority or CA). The CA
+uses the CSR data file to create a public key to match your private key without
+compromising the key itself. The CA never sees the private key.
+Once you receive the SSL Certificate, you install it on your server. You also
+install a pair of intermediate certificates that establish the credibility of
+your SSL Certificate by tying it to your CAâs root certificate. The
+instructions_for_installing_and_testing_your_certificate will be different
+depending on your server.
+In the image below, you can see what is called the certificate chain. It
+connects your server certificate to your CAâs (in this case DigiCertâs)
+root certificate through a series of intermediate certificates.
+[certificate101]
+The most important part of an SSL Certificate is that it is digitally signed by
+a trusted CA like DigiCert. Anyone can create a certificate, but browsers only
+trust certificates that come from an organization on their list of trusted CAs.
+Browsers come with a pre-installed list of trusted CAs, known as the Trusted
+Root CA store. In order to be added to the Trusted Root CA store and thus
+become a Certificate Authority, a company must comply with and be audited
+against security and authentication standards established by the browsers.
+An SSL Certificate issued by a CA to an organization and its domain/website
+verifies that a trusted third party has authenticated that organizationâs
+identity. Since the browser trusts the CA, the browser now trusts that
+organizationâs identity too. The browser lets the user know that the website
+is secure, and the user can feel safe browsing the site and even entering their
+confidential information.
+***** How Does the SSL Certificate Create a Secure Connection? *****
+When a browser attempts to access a website that is secured by SSL, the browser
+and the web server establish an SSL connection using a process called an âSSL
+Handshakeâ (see diagram below). Note that the SSL Handshake is invisible to
+the user and happens instantaneously.
+Essentially, three keys are used to set up the SSL connection: the public,
+private, and session keys. Anything encrypted with the public key can only be
+decrypted with the private key, and vice versa.
+Because encrypting and decrypting with private and public key takes a lot of
+processing power, they are only used during the SSL Handshake to create a
+symmetric session key. After the secure connection is made, the session key is
+used to encrypt all transmitted data.
+[certificate2]
+ 
+   1. Browser connects to a web server (website) secured with SSL (https).
+      Browser requests that the server identify itself.
+   2. Server sends a copy of its SSL Certificate, including the serverâs
+      public key.
+   3. Browser checks the certificate root against a list of trusted CAs and
+      that the certificate is unexpired, unrevoked, and that its common name is
+      valid for the website that it is connecting to. If the browser trusts the
+      certificate, it creates, encrypts, and sends back a symmetric session key
+      using the serverâs public key.
+   4. Server decrypts the symmetric session key using its private key and sends
+      back an acknowledgement encrypted with the session key to start the
+      encrypted session.
+5. Server and Browser now encrypt all transmitted data with the session key.
+***** Why Do I Need SSL? *****
+One of the most important components of online business is creating a trusted
+environment where potential customers feel confident in making purchases.
+Browsers give visual cues, such as a lock icon or a green bar, to help visitors
+know when their connection is secured.
+In the below image, you can see the green address bar that comes with extended
+validation_(EV)_SSL_Certificates.
+[certificate3]
+If your site collects credit card information you are required by the Payment
+Card Industry (PCI) to have an SSL Certificate. If your site has a login
+section or sends/receives other private information (street address, phone
+number, health records, etc.), you should use SSL_Certificates to protect that
+data.
+Your customers want to know that you value their security and are serious about
+protecting their information. More and more customers are becoming savvy online
+shoppers and reward the brands that they trust with increased business.
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+This entry was posted in Linux, OS and tagged blogxtu_https, blogxtu_ssl, http,
+https, secure_sockets_layer, ssl, stl, å®å¨é¾æ¥. Bookmark the permalink.
+←_As_Long_As_You_Love_Me_—_Flipped
+Do_It_Yourself_SSL_Guide_Part_1:_An_Introduction_→
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

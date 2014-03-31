@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>encode string | blogxtu</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blogxtu.zapto.org/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://blogxtu.zapto.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; Feed" href="http://blogxtu.zapto.org/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; Comments Feed" href="http://blogxtu.zapto.org/?feed=comments-rss2" />
+<link rel="alternate" type="application/rss+xml" title="blogxtu &raquo; encode string Tag Feed" href="http://blogxtu.zapto.org/?feed=rss2&#038;tag=encode-string" />
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1386832166&#038;s=a10i10m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://blogxtu.zapto.org/wp-content/gd-star-rating/css/rating.css?ver=1.9.22' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-css'  href='http://blogxtu.zapto.org/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css?ver=3.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.22'></script>
+<script type='text/javascript' src='http://blogxtu.zapto.org/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js?ver=2.1.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogxtu.zapto.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogxtu.zapto.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.7.1" />
+<script type="text/javascript" src="http://blogxtu.zapto.org/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://blogxtu.zapto.org/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"80",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "bd63f7f05b";
+var gdsr_cnst_ajax = "http://blogxtu.zapto.org/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 1;
+var gdsr_cnst_cache = 0;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+
+		<script type="text/javascript">
+			videojs.options.flash.swf = "http://blogxtu.zapto.org/wp-content/plugins/videojs-html5-video-player-for-wordpress/videojs/video-js.swf";
+		</script>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f1f1f1; background-image: url('http://blogxtu.zapto.org/wp-content/uploads/2013/12/keyboardwallpaper.jpg'); background-repeat: repeat; background-position: top center; background-attachment: fixed; }
+</style>
+</head>
+
+<body class="archive tag tag-encode-string tag-87 custom-background">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://blogxtu.zapto.org/" title="blogxtu" rel="home">blogxtu</a>
+					</span>
+				</div>
+				<div id="site-description">Ideas change us, then changes the world!</div>
+
+										<img src="http://blogxtu.zapto.org/wp-content/uploads/2013/12/copy-site-header.jpg" width="940" height="198" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu-header"><ul id="menu-menu-1" class="menu"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-5"><a href="http://blogxtu.zapto.org/">Home</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9"><a href="http://blogxtu.zapto.org/?cat=2">OS</a>
+<ul class="sub-menu">
+	<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://blogxtu.zapto.org/?cat=3">Linux</a></li>
+	<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="http://blogxtu.zapto.org/?cat=4">Windows</a></li>
+</ul>
+</li>
+<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-12"><a href="http://blogxtu.zapto.org/?cat=5">Program</a>
+<ul class="sub-menu">
+	<li id="menu-item-177" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-177"><a href="http://blogxtu.zapto.org/?cat=68">Challenge</a></li>
+	<li id="menu-item-218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-218"><a href="http://blogxtu.zapto.org/?cat=90">Cryptography</a></li>
+	<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a href="http://blogxtu.zapto.org/?cat=10">C</a></li>
+	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a href="http://blogxtu.zapto.org/?cat=11">CPlus</a></li>
+	<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="http://blogxtu.zapto.org/?cat=9">Shell</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="http://blogxtu.zapto.org/?cat=7">Perl</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="http://blogxtu.zapto.org/?cat=12">PHP</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="http://blogxtu.zapto.org/?cat=6">Python</a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="http://blogxtu.zapto.org/?cat=8">Java</a></li>
+</ul>
+</li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-20"><a href="http://blogxtu.zapto.org/?cat=13">Video</a>
+<ul class="sub-menu">
+	<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://blogxtu.zapto.org/?cat=15">Music Video</a></li>
+	<li id="menu-item-22" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-22"><a href="http://blogxtu.zapto.org/?cat=16">Movie</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-89"><a href="http://blogxtu.zapto.org/?cat=37">Chanel</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://blogxtu.zapto.org/?cat=38">Gags</a></li>
+	</ul>
+</li>
+	<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21"><a href="http://blogxtu.zapto.org/?cat=17">Clip</a></li>
+</ul>
+</li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="http://blogxtu.zapto.org/?cat=14">Life</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://blogxtu.zapto.org/?page_id=24">About</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="http://blogxtu.zapto.org/?cat=18">More</a></li>
+</ul></div>			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+				<h1 class="page-title">Tag Archives: <span>encode string</span></h1>
+
+
+
+
+
+
+			<div id="post-215" class="post-215 post type-post status-publish format-standard hentry category-cryptography-program category-linux category-python tag-blogxtu tag-blogxtu-cryptography tag-cryptography tag-cryptography-101 tag-csrgxtu tag-csrgxtu-cryptography tag-decoding tag-encode-string">
+			<h2 class="entry-title"><a href="http://blogxtu.zapto.org/?p=215" rel="bookmark">cryptography 101</a></h2>
+
+			<div class="entry-meta">
+				<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blogxtu.zapto.org/?p=215" title="11:14 am" rel="bookmark"><span class="entry-date">December 16, 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blogxtu.zapto.org/?author=2" title="View all posts by Archer Reilly">Archer Reilly</a></span>			</div><!-- .entry-meta -->
+
+				<div class="entry-summary">
+				<p>Preface I always think it will be cool to hide your message with cryptography, what&#8217;s more is that even though the others got your message, he still can not get what you trying to say, because the message he get &hellip; <a href="http://blogxtu.zapto.org/?p=215">Continue reading <span class="meta-nav">&rarr;</span></a></p>
+			</div><!-- .entry-summary -->
+	
+			<div class="entry-utility">
+									<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="http://blogxtu.zapto.org/?cat=90" title="View all posts in Cryptography" rel="category">Cryptography</a>, <a href="http://blogxtu.zapto.org/?cat=3" title="View all posts in Linux" rel="category">Linux</a>, <a href="http://blogxtu.zapto.org/?cat=6" title="View all posts in Python" rel="category">Python</a>					</span>
+					<span class="meta-sep">|</span>
+													<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="http://blogxtu.zapto.org/?tag=blogxtu" rel="tag">blogxtu</a>, <a href="http://blogxtu.zapto.org/?tag=blogxtu-cryptography" rel="tag">blogxtu cryptography</a>, <a href="http://blogxtu.zapto.org/?tag=cryptography" rel="tag">cryptography</a>, <a href="http://blogxtu.zapto.org/?tag=cryptography-101" rel="tag">cryptography 101</a>, <a href="http://blogxtu.zapto.org/?tag=csrgxtu" rel="tag">csrgxtu</a>, <a href="http://blogxtu.zapto.org/?tag=csrgxtu-cryptography" rel="tag">csrgxtu cryptography</a>, <a href="http://blogxtu.zapto.org/?tag=decoding" rel="tag">decoding</a>, <a href="http://blogxtu.zapto.org/?tag=encode-string" rel="tag">encode string</a>					</span>
+					<span class="meta-sep">|</span>
+								<span class="comments-link"><a href="http://blogxtu.zapto.org/?p=215#comments" title="Comment on cryptography 101">5 Comments</a></span>
+							</div><!-- .entry-utility -->
+		</div><!-- #post-## -->
+
+		
+	
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://blogxtu.zapto.org/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="calendar-2" class="widget-container widget_calendar"><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>March 2014</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://blogxtu.zapto.org/?m=201402" title="View posts for February 2014">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
+	</tr>
+	<tr>
+		<td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td>24</td><td>25</td><td>26</td><td>27</td><td id="today">28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>		<li id="recent-posts-2" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=231">Manually install Sun JDK on Ubuntu Linux</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=225">Cryptology 102 &#8212; Substitution</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=215">cryptography 101</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=212">Programming challenge: Largest product in a series</a>
+						</li>
+					<li>
+				<a href="http://blogxtu.zapto.org/?p=205">Programming Challenge: nst prime</a>
+						</li>
+				</ul>
+		</li><li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=215#comment-25">cryptography 101</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=215#comment-24">cryptography 101</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=205#comment-22">Programming Challenge: nst prime</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=167#comment-21">Blogxtu SEO 101 &#8212; Install WordPress In Lamp</a></li><li class="recentcomments"><a href='http://blogxtu.zapto.org' rel='external nofollow' class='url'>Archer Reilly</a> on <a href="http://blogxtu.zapto.org/?p=167#comment-20">Blogxtu SEO 101 &#8212; Install WordPress In Lamp</a></li></ul></li><li id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://blogxtu.zapto.org/?m=201402'>February 2014</a></li>
+	<li><a href='http://blogxtu.zapto.org/?m=201312'>December 2013</a></li>
+		</ul>
+</li><li id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-68"><a href="http://blogxtu.zapto.org/?cat=68" title="this sub category contains some programming challenges, you can use whatever language to implement the problem.">Challenge</a>
+</li>
+	<li class="cat-item cat-item-90"><a href="http://blogxtu.zapto.org/?cat=90" title="the sub category contains post about cryptography">Cryptography</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://blogxtu.zapto.org/?cat=8" title="sub category related to Java programming language.">Java</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://blogxtu.zapto.org/?cat=14" title="category contains some life things">Life</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blogxtu.zapto.org/?cat=3" title="sub category related to Linux Operating systems">Linux</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://blogxtu.zapto.org/?cat=15" title="sub category  contains mv videos">Music Video</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="http://blogxtu.zapto.org/?cat=2" title="category related to Operating Systems.">OS</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blogxtu.zapto.org/?cat=5" title="category related programming things">Program</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blogxtu.zapto.org/?cat=6" title="sub category related to Python program">Python</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://blogxtu.zapto.org/?cat=9" title="sub category related to shell programming language">Shell</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blogxtu.zapto.org/?cat=1" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://blogxtu.zapto.org/?cat=13" title="category contains videos">Video</a>
+</li>
+		</ul>
+</li><li id="meta-2" class="widget-container widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://blogxtu.zapto.org/wp-login.php">Log in</a></li>
+			<li><a href="http://blogxtu.zapto.org/?feed=rss2" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://blogxtu.zapto.org/?feed=comments-rss2" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://blogxtu.zapto.org/" title="blogxtu" rel="home">
+					blogxtu				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>

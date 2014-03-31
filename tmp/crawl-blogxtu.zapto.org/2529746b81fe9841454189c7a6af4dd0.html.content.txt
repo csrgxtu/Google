@@ -1,0 +1,303 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_Programming_challenge:_Largest_product_in_a_series
+Cryptology_102_—_Substitution_→
+****** cryptography 101 ******
+Posted on December_16,_2013 by Archer_Reilly
+***** Preface *****
+I always think it will be cool to hide your message with cryptography, what’s
+more is that even though the others got your message, he still can not get what
+you trying to say, because the message he get is a messed up information that
+is useless for him.
+I always think it will be cool to speack a language that is loud and quick, and
+when you speack it, nobody understands what you are saying. but this one comes
+to the other languages.
+In this series of articles, i am gonna to illustrate the concept of the
+cryptography and the implementation. more on implementation precisely.
+cryptography is a field that is full of interesting things, and a lot of
+tricks. so let’s get started.
+***** what in this article *****
+In this article, I am focus on a simple trick. a trick that represents the
+original english strings with it’s ASCII numbers. so the idea is simple if you
+know the ASCII. generally speacking, for every english characters that can be
+printed on the screen, there is a conrespond decimal number. so one way is you
+store you original information into a plain text, the other way is to use the
+decimal number representation store the information. for example, suppose you
+have a string message says “Hello, blogxtu“, then the decimal format will be “/
+d72/d101/d108/d108/d111/d44/d32/d98/d108/d111/d103/d120/d116/d117“, if someone
+sees this decimal format, he will need to be smart enough to figure out what it
+is trying to say.
+The idea is simple, so the code is also simple. I use Python implement this
+idea, but if you got it, you can implement it with any programming language.
+here is my code: strdigit.py
+ 
+#!/usr/bin/env python
+#
+# Author: Archer
+# File: strdigit.py
+# Date: 16/Dec/2013
+# Des: this script is used to convert a string into its digit reperentation.
+#
+# Produced By CSRGXTU
+
+import sys
+
+# Des: function load_data is used to load the raw data from file into a
+#   string
+#
+# @param filename
+# @return string or none on error
+def load_data(filename = None):
+    # First, check out the parameter
+    if filename == None:
+        return None
+
+    # Second, open the file for read
+    input_fh = open(filename, 'r')
+
+    # Third, read the entire file into the string
+    tmpstr = input_fh.read()
+
+    # Finally, return the result
+    return tmpstr
+
+# Des: function save_to_file is used to save a string into file
+#
+# @param filename, string
+# @return ture or false
+def save_to_file(filename = None, string = None):
+    # First, check out the parameter
+    if filename == None or string == None:
+        return False
+
+    # Second, open file for write
+    output_fh = open(filename, 'w')
+
+    # Third, write the string into the file
+    output_fh.write(string)
+
+    # Finally, close file and return true
+    output_fh.close()
+    return True
+
+# Des: function str_to_digit is used to transcode the char in a string
+#   into it's ascii digit, like 'aa' to '\d97\d97'.
+#
+# @param str
+# @return str or none on error
+def str_to_digit(string = None):
+    # First, check out the parameter
+    if string == None:
+        return None
+
+    # Second, in a loop, transcode
+    tmpstr = ''
+    for char in string:
+        #sys.stdout.write(char)
+        tmpstr += '/d' + str(ord(char))
+
+    # remove the first '' character in tmpstr
+    #tmpstr = tmpstr[1:]
+
+    # Finally, return the string
+    return tmpstr
+
+# Des: function digit_to_str is used to convert a string of digit into a
+#   a meaningful string
+#
+# @param string
+# @return string or None on error
+def digit_to_str(string = None):
+    # First, check out the parameter
+    if string == None:
+        return None
+
+    # Second, loop the string and split it
+    tmplist = string.split('/d')
+    # remove the first '' character
+    tmplist = tmplist[1:]
+    tmplist = map(int, tmplist)
+    tmpstr = ''
+    for item in tmplist:
+        #sys.stdout.write(chr(item))
+        tmpstr += chr(item)
+
+    # Finally, return the string
+    return tmpstr
+
+tmpstr = raw_input()
+tmpstr = str_to_digit(tmpstr)
+print tmpstr
+tmpstra = digit_to_str(tmpstr)
+print tmpstra
+The code isn’t that much difficult too read, if you have some suggestions on
+the code, I will be glad to hear your voice.
+VN:F [1.9.22_1171]
+please wait...
+Rating: 7.0/10 (1 vote cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+cryptography 101, 7.0 out of 10 based on 1 rating
+This entry was posted in Cryptography, Linux, Python and tagged blogxtu,
+blogxtu_cryptography, cryptography, cryptography_101, csrgxtu, csrgxtu
+cryptography, decoding, encode_string. Bookmark the permalink.
+←_Programming_challenge:_Largest_product_in_a_series
+Cryptology_102_—_Substitution_→
+**** 5 Responses to cryptography 101 ****
+   1. http://mahara.ulcc.ac.uk/view/
+      artefact.php?artefact=15677&amp;view=4226says:
+      December_17,_2013_at_1:23_pm
+      Awesome blog you have here but I was curious about if you knew of any
+      community forums that cover the same topics discussed in this article?
+      Iâd really love to be a part of group where I can get suggestions from
+      other experienced people that share the same interest. If you have any
+      recommendations, please let me know. Many thanks!
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_3:14_pm
+            well, i believe there will or already have, I am learning
+            cryptography from a book.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+   2. Cheap_Canada_Goose_Hybridge_Lite_Vest_Men'ssays:
+      December_18,_2013_at_12:45_pm
+      This can be a great write-up. Thank you for bothering to explain this all
+      out for us. It is actually a fantastic guide!
+      Cheap Canada Goose Hybridge Lite Vest Men’s http://www.sicanta.com/
+      lightbox/images/winterjacket.aspx
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+   3. http://northwestarchivistsinc.wildapricot.org/
+      news?mode=PostView&amp;bmi=1374228&amp;anchor=1461482#1461482says:
+      December_24,_2013_at_1:17_pm
+      Use it or lose it! I teach at a Christian School and I introduce the
+      students to the Greek behind English words. There is currently a student
+      who wants to get together and learn Hebrew with me! These cards would be
+      great!!
+      http://northwestarchivistsinc.wildapricot.org/
+      news?mode=PostView&bmi=1374228&anchor=1461482#1461482 http://
+      northwestarchivistsinc.wildapricot.org/
+      news?mode=PostView&bmi=1374228&anchor=1461482#1461482
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_3:11_pm
+            what do you want to say exactly, i don’t get it.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+http://blogxtu.zapto.org Ideas change us, then changes the world! Mon, 24 Feb
+2014 02:20:00 +0000 en-US hourly 1 http://wordpress.org/?v=3.7.1
+http://blogxtu.zapto.org/?p=231 http://blogxtu.zapto.org/?p=231#comments Sun,
+23 Feb 2014 13:16:28 +0000
+CDATA[Archer Reilly]]>
+CDATA[Java]]>
+CDATA[Linux]]>
+CDATA[OS]]>
+CDATA[blogxtu]]>
+CDATA[blogxtu oop]]>
+CDATA[csrgxtu]]>
+CDATA[java install]]>
+CDATA[java manul install]]>
+CDATA[ubuntu install]]>
+CDATA[ubuntu java]]> http://blogxtu.zapto.org/?p=231
+CDATA[A little word about Java Java is a programming language originally
+developed by Sun Corporation, it is objecte orinted. it is very easy to get to
+use, but it is not good at performance. still Java is a popular programming …
+Continue_reading_→]]>
+CDATA[
+***** A little word about Java *****
+Java is a programming language originally developed by Sun Corporation, it is
+objecte orinted. it is very easy to get to use, but it is not good at
+performance. still Java is a popular programming language around the world,
+especially in China. I have seen there are a lot of not much clever programmers
+who learns Java everyday. Not for the popular of the Apache_Foundation, I won’t
+take time to learn this crap.(apologise for my rudeness, It is not Java itself
+sometimes, it is because I have seen too much Chinese stick into Java, use Java
+develop everything, as far as know, that the YouTube, Facebook, Google are not
+implemented by Java, but I don’t know what’s going on in my country, everybody
+stick into Java!)
+***** Why I write this post to illustrate how to install Java manually? *****
+Well, if you are using Ubuntu as your working environment, then it is pretty
+easy to install Java. you can type javac and javaÂ in the terminal, and the
+Ubuntu system will give you a hint on how to install Java quickly, like
+following:
+archer@csrgxtu3:~$ java
+The program 'java' can be found in the following packages:
+ * default-jre
+ * gcj-4.6-jre-headless
+ * openjdk-6-jre-headless
+ * gcj-4.5-jre-headless
+ * openjdk-7-jre-headless
+Try: sudo apt-get install  <selected package>
+If you do as what the system indicates you, this is ok, the apt package manager
+will spread the installed package around your system. but this way isn’t good
+if you reinstall your system, for you will need to reinstall Java after you
+reinstalling the system. I am a big fan of the Linux operating system, I try
+different Linux distributions from time to time, means I need to reinstall Java
+everytime. so I decided this time install the JDK into my home(data) partions,
+thus everytime i install a new system, i won’t need to reinstall Java(home
+partions contains all of the user data, so I don’t format this partion when i
+install a new system).
+***** How to manually install? *****
+First, you need to download the jdk file from Oracle’s website. click here to
+download the package.(note: if you are in 64 bit systems, please download the
+64 bit version jdk, i am assuming you are using 32 bit machine).
+jdk-7u51-linux-i586.tar.gz
+Second, untar the downloaded file.
+tar xvf jdk-7u51-linux-i586.tar.gz
+ 
+Third, edit the .bashrc file to add the environment PATH
+# Add for jdk manual install
+PATH="$HOME/bin/jdk1.7.0_45/bin:$PATH"
+ 
+Fouth, make PATH take effect.
+ source /home/$USER/.bashrc
+now, the java is installed on your system, you can type following command to
+verify that.
+which java
+if upper command is ok, then it should outputs the path where java command
+locates.
+To be honest, I like working in the terminal, but when you program Java, you
+need a IDE, for instance, eclipse or netbeans. but when you use this IDE, it
+take too much CPU load. I want to say that i will stick with terminal, and i
+found it just worked fine until now.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=231 0
+http://blogxtu.zapto.org/?p=225 http://blogxtu.zapto.org/?p=225#comments Tue,
+18 Feb 2014 15:48:44 +0000
+CDATA[Archer Reilly]]>
+CDATA[Cryptography]]>
+CDATA[Java]]>
+CDATA[Linux]]>
+CDATA[Program]]>
+CDATA[Python]]>
+CDATA[blogxtu]]>
+CDATA[cryptography]]>
+CDATA[cryptology]]>
+CDATA[cryptology substitution]]>
+CDATA[csrgxtu cryptology]]>
+CDATA[csrgxtu java crypt]]>
+CDATA[java]]>
+CDATA[java cryptology]]>
+CDATA[python cryptology]]>
+CDATA[substitution]]>
+CDATA[substitution implemnetation]]> http://blogxtu.zapto.org/?p=225
+CDATA[What is substitution in Cryptology? well, there are mainly two categories
+in cryptology, one is classical, the other is contemporary. and substitution
+belongs to classical cryptology. substituion is a little like one to one
+relationship in function. every character in … Continue_reading_→]]>
+CDATA[
+***** What is substitution in Cryptology? *****
+well, there are mainly two categories in cryptology, one is classical, the
+other is contemporary. and substitution belongs to classical cryptology.
+substituion is a little like one to one relationship in function. every
+character in the plain text will be replaced by another character — crypted
+character. for example, use crypted character a to represent plain character b,
+use crypted char b represent plain char c, etc, thus, if you have a plain text
+namely “abcd“, it will be “zabc“. the relationship in the example is like this:
+abcdefghijklmnopqrstuvwxyz
+zabcdefghijklmnopqrstuvwxy
+as you can see, if you can shift one position, then you can shift as many as
+you want.
+in a word, substitution is use one char in a char set replace another char in
+another char set, and this replace relationship is one to one.
+***** How to implement the substitution in Python? *****
+Here only consider the alphabetical characters. use two list represent the
+plain text character set and the crypted character set. i.e.
+plainSet = ['a', 'b', ..., 'y', 'z']
+crypteSet = ['z', 'a', ..., 'x', 'y']
+then if you have a plain text “hello blogxtu”, then for each character in the
+plain text, use correspond crypte char represent it. and then you will get a
+crypted text “gckkn aknfwsq”.
+“hello blogxtu” ==>”gckkn aknfwsq”
+here is the source code of the implementation by python:
+#!/usr/bin/env python
+#
+# Author: Archer Reilly
+# Date: 22/Feb/2014
+# File: substitution.py
+# Des: this file is used to implement substituion in cryptology.
+#
+# Produced By CSRGXTU
+
+import string
+
+# Des: function substitute is used to substitute the plain text
+#		with crypted text.
+#
+# @param plainText, offset
+# @return cryptText
+def substitute(plainText, offset):
+	# check parameters first
+	cryptText = "";
+
+	# plain code table and crypted code table
+	plainCode = list(string.ascii_lowercase);
+	cryptCode = [];
+	cryptCode[0:offset] = plainCode[-offset:len(plainCode)];
+	cryptCode[offset:len(plainCode)] = plainCode[0:-offset];
+
+	# substitute
+	for char in plainText:
+		# test if char in 26 english chars
+		if (any(char == item for item in plainCode)):
+			cryptText += cryptCode[plainCode.index(char)];
+		else:
+			cryptText += char;
+
+	return cryptText;
+
+# Des: function unsubstitute is used to un substitute the crypted text
+#		into plain text
+#
+# @param cryptText, offset
+# @return plainText
+def unsubstitute(cryptText, offset):
+	# check parameter first
+	plainText = "";
+
+	# build coding table
+	plainCode = list(string.ascii_lowercase);
+	cryptCode = [];
+	cryptCode[0:offset] = plainCode[-offset:len(plainCode)];
+	cryptCode[offset:len(plainCode)] = plainCode[0:-offset];
+
+	# un substitute
+	for char in cryptText:
+		# test if char in 26 english chars
+		if (any(char == item for item in cryptCode)):
+			plainText += plainCode[cryptCode.index(char)];
+		else:
+			plainText += char;
+
+	return plainText;
+
+# Testing
+print substitute("welcome to csrgxtu", 24);
+print unsubstitute(substitute("welcome to csrgxtu", 24), 24);
+and here is the implementation by Java:
+//*******************************************************************
+// Author: Archer Reilly
+// Date: 24/Feb/2014
+// File: Substitution.java
+// Des: this file is used to implement the substitution in cryptology
+//
+// Produced By CSRGXTU
+//*******************************************************************
+
+public class Substitution {
+	/**
+	 * plainText is the variable that contains the original text before
+	 * encrypt.
+	 */	
+	private String plainText;
+
+	/**
+	 * cryptText is the variable that contains the encrypted text after
+	 * encrypt.
+	 */
+	private String cryptText;
+
+	/**
+	 * plainCode is the first part of the code table that contains the
+	 * the plain character, it needs to be work with cryptCode.
+	 */
+	private char[] plainCode = new char[26];
+
+	/**
+	 * cryptCode is the second part of the code table that contains the
+	 * crypted character, it needs to be work with plainCode.
+	 */
+	private char[] cryptCode = new char[26];
+
+	/**
+	 * offset is the length u wana shift between cryptCode and
+	 * plainCode.
+	 */
+	private int offset;
+
+	/**
+	 * constructor responsible initialize the class properties.
+	 *
+	 * @param plainText
+	 * @param offset
+	 */
+	Substitution(String plainText, int offset) {
+		// First, check out the parameter
+		if (plainText == null || offset == 0) {
+			throw new IllegalArgumentException("plainText or offset not "
+				+ "found!");
+		}
+
+		// Second, initialize
+		this.plainText = plainText;
+		this.cryptText = "";
+		this.plainCode = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+		this.offset = offset;
+		char[] tmpa = new char[offset];
+		char[] tmpb = new char[26 - offset];
+		int j = 0;
+		for (int i = (plainCode.length - offset);
+			i < plainCode.length; i++) {
+			tmpa[j] = plainCode[i];
+			j++;
+		}
+		for (int i = 0; i < (plainCode.length - offset); i++) {
+			tmpb[i] = plainCode[i];
+		}
+
+		for (int i = 0; i < tmpa.length; i++) {
+			cryptCode[i] = tmpa[i];
+		}
+		j = tmpa.length;
+		for (int i = 0; i < tmpb.length; i++) {
+			cryptCode[j] = tmpb[i];
+			j++;
+		}
+
+		// debuging
+		/*for (int i = 0; i < cryptCode.length; i++) {
+			System.out.print(cryptCode[i]);
+		}*/
+	}
+
+	/**
+	 * substitute is used to replace the character in plainText with
+	 * the character in cryptCode table.
+	 */
+	public void substitute() {
+		// convert the code table into string, for string has a lot of
+		// method i can use
+		String tmpa = new String(this.plainCode);
+		String tmpb = new String(this.cryptCode);
+		String res = "";
+
+		for (char ch : this.plainText.toCharArray()) {
+			// if ch not in the code table, do nothing about this ch
+			if (tmpa.indexOf(ch) != -1) {
+				res += tmpb.charAt(tmpa.indexOf(ch));
+			} else {
+				res += ch;
+			}
+		}
+		this.cryptText = res;
+	}
+
+	/**
+	 * unsubstitute is used to replace the character in the cryptText
+	 * with the character in plainCode talbe, this method works as
+	 * company with substitute.
+	 */
+	public void unsubstitute() {
+		String tmpa = new String(this.plainCode);
+		String tmpb = new String(this.cryptCode);
+		String res = "";
+
+		for (char ch : this.cryptText.toCharArray()) {
+			if (tmpb.indexOf(ch) != -1) {
+				res += tmpa.charAt(tmpb.indexOf(ch));
+			} else {
+				res += ch;
+			}
+		}
+
+		this.plainText = res;
+	}
+
+	public String getPlainText() {
+		return this.plainText;
+	}
+
+	public void setPlainText(String plainText) {
+		this.plainText = plainText;
+	}
+
+	public String getCryptText() {
+		return this.cryptText;
+	}
+
+	// maybe not provide this method
+	public void setCryptText(String cryptText) {
+		this.cryptText = cryptText;
+	}
+
+	public char[] getPlainCode() {
+		return this.plainCode;
+	}
+
+	public void setPlainCode(char[] plainCode) {
+		this.plainCode = plainCode;
+	}
+
+	public char[] getCryptCode() {
+		return this.cryptCode;
+	}
+
+	public void setCryptCode(char[] cryptCode) {
+		this.cryptCode = cryptCode;
+	}
+
+	public int getOffset() {
+		return this.offset;
+	}
+
+	public void setOffset(int offset) {
+		this.offset = offset;
+	}
+
+	// Test main method
+	public static void main(String[] args) {
+		Substitution obj = new Substitution("csrgxtu", 3);
+		obj.substitute();
+		System.out.println(obj.getCryptText());
+		obj.unsubstitute();
+		System.out.println(obj.getPlainText());
+	}
+}
+ 
+I know this isn’t perfect here, there still lot of thing to do, but you are
+welcomed to comment this post.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=225 0
+http://blogxtu.zapto.org/?p=215 http://blogxtu.zapto.org/?p=215#comments Mon,
+16 Dec 2013 11:14:28 +0000
+CDATA[Archer Reilly]]>
+CDATA[Cryptography]]>
+CDATA[Linux]]>
+CDATA[Python]]>
+CDATA[blogxtu]]>
+CDATA[blogxtu cryptography]]>
+CDATA[cryptography]]>
+CDATA[cryptography 101]]>
+CDATA[csrgxtu]]>
+CDATA[csrgxtu cryptography]]>
+CDATA[decoding]]>
+CDATA[encode string]]> http://blogxtu.zapto.org/?p=215
+CDATA[Preface I always think it will be cool to hide your message with
+cryptography, what’s more is that even though the others got your message, he
+still can not get what you trying to say, because the message he get … Continue
+reading_→]]>
+CDATA[
+***** Preface *****
+I always think it will be cool to hide your message with cryptography, what’s
+more is that even though the others got your message, he still can not get what
+you trying to say, because the message he get is a messed up information that
+is useless for him.
+I always think it will be cool to speack a language that is loud and quick, and
+when you speack it, nobody understands what you are saying. but this one comes
+to the other languages.
+In this series of articles, i am gonna to illustrate the concept of the
+cryptography and the implementation. more on implementation precisely.
+cryptography is a field that is full of interesting things, and a lot of
+tricks. so let’s get started.
+***** what in this article *****
+In this article, I am focus on a simple trick. a trick that represents the
+original english strings with it’s ASCII numbers. so the idea is simple if you
+know the ASCII. generally speacking, for every english characters that can be
+printed on the screen, there is a conrespond decimal number. so one way is you
+store you original information into a plain text, the other way is to use the
+decimal number representation store the information. for example, suppose you
+have a string message says “Hello, blogxtu“, then the decimal format will be “/
+d72/d101/d108/d108/d111/d44/d32/d98/d108/d111/d103/d120/d116/d117“, if someone
+sees this decimal format, he will need to be smart enough to figure out what it
+is trying to say.
+The idea is simple, so the code is also simple. I use Python implement this
+idea, but if you got it, you can implement it with any programming language.
+here is my code: strdigit.py
+ 
+#!/usr/bin/env python
+#
+# Author: Archer
+# File: strdigit.py
+# Date: 16/Dec/2013
+# Des: this script is used to convert a string into its digit reperentation.
+#
+# Produced By CSRGXTU
+
+import sys
+
+# Des: function load_data is used to load the raw data from file into a
+#   string
+#
+# @param filename
+# @return string or none on error
+def load_data(filename = None):
+    # First, check out the parameter
+    if filename == None:
+        return None
+
+    # Second, open the file for read
+    input_fh = open(filename, 'r')
+
+    # Third, read the entire file into the string
+    tmpstr = input_fh.read()
+
+    # Finally, return the result
+    return tmpstr
+
+# Des: function save_to_file is used to save a string into file
+#
+# @param filename, string
+# @return ture or false
+def save_to_file(filename = None, string = None):
+    # First, check out the parameter
+    if filename == None or string == None:
+        return False
+
+    # Second, open file for write
+    output_fh = open(filename, 'w')
+
+    # Third, write the string into the file
+    output_fh.write(string)
+
+    # Finally, close file and return true
+    output_fh.close()
+    return True
+
+# Des: function str_to_digit is used to transcode the char in a string
+#   into it's ascii digit, like 'aa' to '\d97\d97'.
+#
+# @param str
+# @return str or none on error
+def str_to_digit(string = None):
+    # First, check out the parameter
+    if string == None:
+        return None
+
+    # Second, in a loop, transcode
+    tmpstr = ''
+    for char in string:
+        #sys.stdout.write(char)
+        tmpstr += '/d' + str(ord(char))
+
+    # remove the first '' character in tmpstr
+    #tmpstr = tmpstr[1:]
+
+    # Finally, return the string
+    return tmpstr
+
+# Des: function digit_to_str is used to convert a string of digit into a
+#   a meaningful string
+#
+# @param string
+# @return string or None on error
+def digit_to_str(string = None):
+    # First, check out the parameter
+    if string == None:
+        return None
+
+    # Second, loop the string and split it
+    tmplist = string.split('/d')
+    # remove the first '' character
+    tmplist = tmplist[1:]
+    tmplist = map(int, tmplist)
+    tmpstr = ''
+    for item in tmplist:
+        #sys.stdout.write(chr(item))
+        tmpstr += chr(item)
+
+    # Finally, return the string
+    return tmpstr
+
+tmpstr = raw_input()
+tmpstr = str_to_digit(tmpstr)
+print tmpstr
+tmpstra = digit_to_str(tmpstr)
+print tmpstra
+The code isn’t that much difficult too read, if you have some suggestions on
+the code, I will be glad to hear your voice.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=215 5
+http://blogxtu.zapto.org/?p=212 http://blogxtu.zapto.org/?p=212#comments Sun,
+15 Dec 2013 10:48:11 +0000
+CDATA[Archer Reilly]]>
+CDATA[Challenge]]>
+CDATA[Program]]>
+CDATA[Python]]>
+CDATA[Uncategorized]]>
+CDATA[blogxtu]]>
+CDATA[blogxtu programming challenge]]>
+CDATA[csrgxtu]]>
+CDATA[Largest product in a series]]>
+CDATA[python]]> http://blogxtu.zapto.org/?p=212
+CDATA[Problem description Find the greatest product of five consecutive digits
+in the 1000-digit number. 73167176531330624919225119674426574742355349194934
+96983520312774506326239578318016984801869478851843
+85861560789112949495459501737958331952853208805511
+12540698747158523863050715693290963295227443043557
+66896648950445244523161731856403098711121722383113
+62229893423380308135336276614282806444486645238749
+30358907296290491560440772390713810515859307960866
+70172427121883998797908792274921901699720888093776
+65727333001053367881220235421809751254540594752243
+52584907711670556013604839586446706324415722155397
+53697817977846174064955149290862569321978468622482
+83972241375657056057490261407972968652414535100474
+82166370484403199890008895243450658541227588666881
+16427171479924442928230863465674813919123162824586
+17866458359124566529476545682848912883142607690042
+24219022671055626321111109370544217506941658960408
+07198403850962455444362981230987879927244284909188
+84580156166097919133875499200524063689912560717606
+05886116467109405077541002256983155200055935729725
+71636269561882670428252483600823257530420752963450]]>
+CDATA[
+***** Problem description *****
+Find the greatest product of five consecutive digits in the 1000-digit number.
+73167176531330624919225119674426574742355349194934
+96983520312774506326239578318016984801869478851843
+85861560789112949495459501737958331952853208805511
+12540698747158523863050715693290963295227443043557
+66896648950445244523161731856403098711121722383113
+62229893423380308135336276614282806444486645238749
+30358907296290491560440772390713810515859307960866
+70172427121883998797908792274921901699720888093776
+65727333001053367881220235421809751254540594752243
+52584907711670556013604839586446706324415722155397
+53697817977846174064955149290862569321978468622482
+83972241375657056057490261407972968652414535100474
+82166370484403199890008895243450658541227588666881
+16427171479924442928230863465674813919123162824586
+17866458359124566529476545682848912883142607690042
+24219022671055626321111109370544217506941658960408
+07198403850962455444362981230987879927244284909188
+84580156166097919133875499200524063689912560717606
+05886116467109405077541002256983155200055935729725
+71636269561882670428252483600823257530420752963450
+]]> http://blogxtu.zapto.org/?feed=rss2&p=212 0
+http://blogxtu.zapto.org/?p=205 http://blogxtu.zapto.org/?p=205#comments Sun,
+15 Dec 2013 09:03:51 +0000
+CDATA[Archer Reilly]]>
+CDATA[Challenge]]>
+CDATA[Linux]]>
+CDATA[Program]]>
+CDATA[Python]]>
+CDATA[blogxtu]]>
+CDATA[blogxtu programming challenge]]>
+CDATA[blogxtu python]]>
+CDATA[csrgxtu]]>
+CDATA[programming]]>
+CDATA[programming challenge]]>
+CDATA[python]]> http://blogxtu.zapto.org/?p=205
+CDATA[Problem description: By listing the first six prime numbers: 2, 3, 5, 7,
+11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime
+number? My solution: I defined a function nthprime that … Continue_reading_→]]>
+CDATA[
+***** Problem description: *****
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that
+the 6th prime is 13.
+What is the 10 001st prime number?
+***** My solution: *****
+I defined a function nthprime that will calculate the prime number infinitely
+until meet the nth prime number you specify as parameter. here is the python
+code:
+ 
+#!/usr/bin/env python
+#
+# Author: Archer
+# File: nstprime.py
+# Date: 15/Dec/2013
+# Des: to understand what this script doing, check out the problem file in
+#   current direcotry
+#
+# Produced By CSRGXTU
+
+# Des: function prime is used to generate prime number from 2 to the limit
+#   you specified
+#
+# @pram upperlimit
+# @return prime number in list
+def prime(upperlimit = 2):
+    # First, check out the prameter
+    if upperlimit == 2:
+        return [2]
+
+    # Second, in a loop, generate prime
+    x, i = 1, 2
+    while i <= upperlimit:         # check if i is prime         x = i /
+2         while x > 1:
+            if i % x == 0:
+                print i, 'has factor', x
+                break
+            x = x - 1
+        else:
+            print i, 'is prime'
+
+        i += 1
+
+# Des: function nthprime is used to get prime number in the nth location
+#   you specified
+#
+# @pram nth
+# @return interger
+def nthprime(nth = 1):
+    # First, check out the prameter
+    if nth == 1:
+        #print 2, 'is prime'
+        return 2
+
+    # Second, in a loop, generate prime
+    x, i, index = 1, 2, 0
+    while True:
+        # check if i is prime
+        x = i /2
+        while x > 1:
+            if i % x == 0:
+                #print i, 'has factor', x
+                break
+            x = x - 1
+        else:
+                #print i, 'is prime'
+                index += 1
+
+        if index == nth:
+            print i, 'is what you need'
+            return i
+
+        i += 1
+
+nthprime(10001)
+***** Â what is yours *****
+welcome you give me some advice to improve the code to work more efficiently.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=205 2
+http://blogxtu.zapto.org/?p=178 http://blogxtu.zapto.org/?p=178#comments Sun,
+15 Dec 2013 06:18:01 +0000
+CDATA[Archer Reilly]]>
+CDATA[Challenge]]>
+CDATA[Linux]]>
+CDATA[Program]]>
+CDATA[Python]]>
+CDATA[blogxtu]]>
+CDATA[csrgxtu]]>
+CDATA[euler project]]>
+CDATA[linux]]>
+CDATA[programming challenge]]>
+CDATA[python]]>
+CDATA[sum square difference]]>
+CDATA[xtu]]> http://blogxtu.zapto.org/?p=178
+CDATA[Problem description The sum of the squares of the first ten natural
+numbers is, 12 + 22 + … + 102 = 385 The square of the sum of the first ten
+natural numbers is, (1 + 2 + … … Continue_reading_→]]>
+CDATA[
+***** Problem description *****
+The sum of the squares of the first ten natural numbers is,
+12 + 22 + … + 102 = 385
+The square of the sum of the first ten natural numbers is,
+(1 + 2 + … + 10)2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural
+numbers and the square of the sum is 3025 [â] 385 = 2640.
+Find the difference between the sum of the squares of the first one hundred
+natural numbers and the square of the sum.
+***** My solution *****
+Here is my solution, first, I define a function that is used to calculate the
+sum of squares of the first n numbers, then define another function that is
+used to calculate the squares of sum the first n number, then I can get the
+difference by minus one by another. here is the code implemented by Python:
+
+
+#!/usr/bin/env python
+#
+# Author: Archer
+# File: sumsquarediff.py
+# Date: 15/Dec/2013
+# Des: to get to know what this script doing, please see the sumsquarediff
+#   file in current directory.
+#
+# Produced By CSRGXTU.
+
+# Des: function sumsquare is used to caculate the sum of the squares from 1
+#   to the limit you specified.
+#
+# @param upperlimit
+# @return interger
+def sumsquare(upperlimit = 1):
+    # First, check out the parameter
+    if upperlimit == 1:
+        return 1
+
+    # Second, iterator from 1 to upperlimit
+    sumall, i = 0, 1
+    while i <= upperlimit:
+        sumall = sumall + (i ** 2)
+        i = i + 1
+
+    # Finally, return the result
+    return sumall
+
+# Des: function squaresum is used to caculate the square of a sum from 1 to
+#   the limit you specified
+#
+# @param upperlimit
+# @return interger
+def squaresum(upperlimit = 1):
+    # First, check out the parameter
+    if upperlimit == 1:
+        return 1
+
+    # Second, iterator from 1 to upperlimit
+    sumall, i = 0, 1
+    while i <= upperlimit:
+        sumall = sumall + i
+        i = i + 1
+
+    # Finally, return the result
+    return sumall ** 2
+
+# caculate from 1 to 100
+tmpa = squaresum(100)
+tmpb = sumsquare(100)
+print (tmpa - tmpbï¼
+***** What is yours *****
+I am welcoming you to leave me a solution of yours, this problem isn’t
+constraint to a specific programming language, you can implement with any you
+are good at.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=178 0
+http://blogxtu.zapto.org/?p=167 http://blogxtu.zapto.org/?p=167#comments Sat,
+14 Dec 2013 11:56:51 +0000
+CDATA[Archer Reilly]]>
+CDATA[Linux]]>
+CDATA[OS]]>
+CDATA[Shell]]>
+CDATA[Uncategorized]]>
+CDATA[blogxtu]]>
+CDATA[csrgxtu]]>
+CDATA[install wordpress ubuntu]]>
+CDATA[own blog]]>
+CDATA[wordpress]]>
+CDATA[wordpress lamp]]>
+CDATA[wordpress ubuntu]]> http://blogxtu.zapto.org/?p=167
+CDATA[Summary This Blogxtu SEO serials will show you the way that let the word
+know your website. I will start at the beginning, but assume something basic
+knowledge you already know. In this article, I will show you how to … Continue
+reading_→]]>
+CDATA[
+***** Summary *****
+This Blogxtu SEO serials will show you the way that let the word know your
+website. I will start at the beginning, but assume something basic knowledge
+you already know.
+In this article, I will show you how to install WordPress on Lamp in Ubuntu
+Server 12.04.
+***** Backgrounds *****
+**** platform ****
+In this situation, I use Ubuntu 12.04 as my basic server, actually there are a
+lot other operating systems you can chose to be your basic platform, such as
+Centos, It will work on all platforms if you know that platform. to learn more
+about Ubuntu server 12.04, click here. Here I assume that you already installed
+the Ubuntu Server 12.04.
+**** software ****
+To make things simple, I will use LAMP on Ubuntu server, LAMP is short Linux,
+Apache, Mysql, PHP/Perl/Python, a software bundle, used for website. and Ubuntu
+already have the repositories for LAMP, it means that you can easily install
+the LAMP on Ubuntu via a simple command. to install LAMP, just type:
+sudo tasksel
+and chose the LAMP and then press ok, it will then install LAMP automatically
+on your system. here is what it looks:
+[Install-LAMP-Ubuntu]
+[Ubuntu-Lamp-Installing]
+After installed LAMP, you can verify it by pointing your browser to http://
+localhost, and it should looked like this:
+Generally, the default documents root is placed under /var/www,  it only
+contains a index.html file under /var/www, actually, when you point your
+browser to the HTTP address http://localhost,the web server respond with the
+index.html. you can simply put your website file under the diretory, and it
+will work, but if you want some thing more advanced, you should use virtual
+host on Apache, here I will not illustrate how to set virtual host on Apache.
+***** Installing WordPress *****
+Really, what is wordpress? wordpress is a open sourced software that enables
+you build  your own blog site very quickly and with no difficulties. for
+detailed information, click here.
+First, download the wordpress source file. click here to download.
+Second, decompress the source file into the /var/www, here is the command to do
+it.
+unzip latest.zip
+sudo mv wordpress/* /var/www
+Third, create the database and user to use the database.
+mysql -uroot -p
+create database wordpress default character set utf8;
+grant all on wordpress.* to ‘wordpress’@'localhost’ identified by ‘wordpress’
+Fourth, create a simple configuration file for wordpress.
+cd /var/www
+cp wp-config-sample.php wp-config.php
+edit wp-config.php and change the contents accordingly, mainly the database
+name and the username to login the database.
+Fifth, point your browser to the HTTP address http://localhost/index.php,and
+then the rest is very easy, just follow the instructions you will install the
+wordpress on your system.
+ 
+]]> http://blogxtu.zapto.org/?feed=rss2&p=167 9
+http://blogxtu.zapto.org/?p=119 http://blogxtu.zapto.org/?p=119#comments Fri,
+13 Dec 2013 00:29:47 +0000
+CDATA[csrgxtu]]>
+CDATA[Uncategorized]]> http://blogxtu.zapto.org/?p=119
+CDATA[To let the browser play video is a tedious work, here is a video in two
+formats: MP4 and OGV,Â  if you are using Firefox and Chome, it should be no
+problem, but if you are using IE, then it … Continue_reading_→]]>
+CDATA[
+To let the browser play video is a tedious work, here is a video in two
+formats: MP4 and OGV,Â  if you are using Firefox and Chome, it should be no
+problem, but if you are using IE, then it won’t play, technically IE supports
+MP4, but I don’t know why it doesn’tÂ  Play in thisÂ situation.
+
+
+
+
+ ]]> http://blogxtu.zapto.org/?feed=rss2&p=119 0
+http://blogxtu.zapto.org/?p=112 http://blogxtu.zapto.org/?p=112#comments Thu,
+12 Dec 2013 00:28:16 +0000
+CDATA[Archer Reilly]]>
+CDATA[Life]]>
+CDATA[funny]]>
+CDATA[learning Chinese]]>
+CDATA[shall by too]]>
+CDATA[å°ç½å]]> http://blogxtu.zapto.org/?p=112
+CDATA[This is a note by a America who try to learns Chinese: Dear Tim: shall by
+too doll doll by too jack won dolphin long can Jim shall by too low shall by
+too when dull low, doll car low … Continue_reading_→]]>
+CDATA[
+***** This is a note by a America who try to learns Chinese: *****
+Dear Tim:
+shall by too doll doll by too jack won
+dolphin long can Jim shall by too low
+shall by too when dull low, doll car low
+dolphin long doll Ham Eason
+“more power!”
+ç¬¬äºå¤©ï¼
+å°ç½åå°å¤§ç½åå®¶ç©
+å¤§ç°ç¼çè§å°ç½åäº
+å°ç½åé»å°äºï¼èº²å¼äº
+å¤§ç°ç¼å¤§åä¸å£°
+âè«è·ï¼â
+]]> http://blogxtu.zapto.org/?feed=rss2&p=112 0
+http://blogxtu.zapto.org/?p=86 http://blogxtu.zapto.org/?p=86#comments Sun, 08
+Dec 2013 13:45:37 +0000
+CDATA[Archer Reilly]]>
+CDATA[Linux]]>
+CDATA[OS]]>
+CDATA[Shell]]>
+CDATA[apache ssl]]>
+CDATA[blogxtu https]]>
+CDATA[blogxtu ssl]]>
+CDATA[enable ssl]]>
+CDATA[linux ssl]]>
+CDATA[openssl]]>
+CDATA[å¼å¯ssl]]> http://blogxtu.zapto.org/?p=86
+CDATA[Many people want or need to have the connection between the browser and
+the Web server encrypted, but aren’t been able to set it up. This guide is
+intended to help people with the typical Apache on Linux setup to … Continue
+reading_→]]>
+CDATA[
+Many people want or need to have the connection between the browser and the Web
+server encrypted, but aren’t been able to set it up. This guide is intended to
+help people with the typical Apache on Linux setup to make encrypted
+connections available with a minimum of fuss, and if the encrypted connection
+isn’t for a commercial purpose, to do so without spending a penny.
+***** Limitations *****
+Sometimes hosting providers block the user from setting without upgrading
+(i.e., pay more money for) the hosting account. Another possibility is that the
+hosting provider doesn’t want users to have any hands-on control regardless of
+which hosting package you have with them. If you have a package that allows
+full root access or something similar, you’re unlikely to have any problems.
+However, it’s not always necessary to have full access to be able to set it up.
+In this article are alternatives to the hands-on approach you would use when
+logged in as root, but the best I can offer are general pointers. This is
+because most hosting providers offer some sort of control panel for
+administrative tasks, but this access can vary widely from one hosting provider
+to another.
+***** Key Generation *****
+As some of you might already know, a certificate is needed to enable an
+encrypted connection. The connection can be encrypted using the Secure Sockets
+Layer (SSL) or the Transport Layer Security (TLS) mechanism, but you don’t need
+to worry about which will be used because that will be agreed upon by the
+browser and Apache. Before we can obtain a certificate file, we must first
+generate a key file.
+To generate a key file whilst logged in as root via Secure Shell (SSH), you
+need to enter the following command (or a variant of it that’s tailored to your
+preferences.):
+[Key Generation]
+I’ll explain each part of the command. If you’re forced to use a control panel
+provided by your hosting provider, you’ll have a decent idea of what to look
+for and what to do. Some control panels hide this step from the user and
+combine this key generation step with the certificate generation step. If you
+can’t find any option for generating a key, but have an option for generating
+certificates, don’t panic. If you logged in as root, issued this command over
+SSH and got a message back saying something like: bash: openssl: command not
+found, then the OpenSSL program isn’t installed and you either need to install
+it yourself or have your hosting provider install it for you.
+The first part of the command is the name of the program we’re using: OpenSSL.
+This could be something else to look for on a control panel if you can’t find
+keys or certificates. Either OpenSSL or perhaps just SSL. TLS might be another
+possibility, but an unlikely one.
+Next up is the key type option. The two most popular types of keys are DSA and
+RSA. DSA keys are used for digital signatures and aren’t used for encryption;
+RSA keys can be used for both digital signatures and encryption. Here, we need
+to generate an RSA key and you should look out for this option if you’re using
+a control panel to generate the key.
+The next two parts are actually a single instruction to OpenSSL. The -out
+parameter simply indicates that the following text indicates the location of
+where the file should be placed and what the name of the file should be. When
+issuing this command via SSH I recommend using an absolute pathname such as: /
+usr/local/apache2/apache_key.pem so you know exactly where it is once it’s been
+created. If you’re generating the key through a control panel, look for an
+option for specifying where it should be placed, or look for it telling you
+where it will be placed. Regardless of which method you use, make sure that it
+isn’t placed in a directory where Apache serves Web pages.
+The last option of the command is the size if the key in bits. I use 2048
+because it’s the recommended size based on current technology. You can increase
+the number to make it more secure if you prefer, but this means that you might
+take a performance hit when using SSL. A Certificate Authority (CA) might also
+require that you use a size specified by them, but you don’t need to worry
+about CA’s unless you’re intending to use SSL for commercial (or similar)
+purposes.
+Another noteworthy option that’s not used in the command given above is the -
+des3 option. It’s used to add a protecting password to the key. This might
+sound like a good thing, but for the purposes of SSL in Apache, it’s not. If
+you were to use this option, then someone would have to somehow input this
+password every time an SSL connection is made. If you see an option for this in
+a control panel section for making keys, don’t use it.
+***** Obtaining The Certificate *****
+Obtaining a certificate similar to those seen on most commercial sites (where
+they are automatically be trusted by browsers) requires two steps. The first
+step will be performed by you, but you’re not able to perform the second step.
+The CA (such as Verisign or GoDaddy) will perform the last step. The first step
+is to create what’s called a Certificate Signing Request (CSR). A CSR is a file
+that, once signed by a CA, will become your certificate. Here’s the command to
+create it:
+[Normal Certificate]
+Again, I’ll give you some information on each part of the command so you can
+translate this into actions in your control panel or just modify it if you want
+to change something, but it’s unlikely you’ll want to change anything other
+than the file names.
+The first new command is req. This command is to indicate that we intend to use
+CSR management. If you’re using a control panel and you can’t find anything
+about a certificate (request) option, try looking for something like CSR
+(management) instead. The -new option is an obvious one. It simply means that
+we’re creating a new CSR rather than doing something to an existing one. The -
+key option specifies the location of the key file used with the certificate.
+You must alter this option to point to the location of your key file that you
+generated earlier in this guide. If you’re using a control panel you might be
+given a field in a form to specify the location of the key. If this is the case
+then do so. However, some popular control panels ask you to copy and paste the
+key into a text area. How you get the key into your clipboard for pasting in to
+the text area will depend on what can or cannot do with your host. In my
+experience the method most likely to be available is to copy the key to your
+computer, then open it in a text editor. You should use the most secure
+transfer method available to you, but if you’re having to do things this way
+your options are probably quite limited. Trying to open your key file on a
+Windows PC will almost certainly cause it to tell you that it doesn’t know what
+to do with the file. Instead, open the file with Notepad. I’ve opened the key
+in Notepad on Windows XP. The key was presented in text form, but it showed my
+test key over just two lines. Depending on your control panel, it might be OK
+to paste in the key as Notepad presents it, but you might have to make some
+changes after you paste it in to make it display correctly. The following is a
+demonstration of how a 2048 bit key would is often represented in text form:
+[2048 bit key]
+As you can see, it’s a block of text with start and end markers on lines of
+their own at the beginning and end of the key. The main key text appears as 25
+lines that, with the exception of the last line, are 64 characters long. A key
+that has fewer bits will have fewer lines and a key with more bits will have
+more lines, but the line length stays the same.
+The final part of the command, -out, serves the same purpose here as it did
+with the command we used to generate the key. Follow the same guideline of
+giving an absolute pathname (if possible) so you know exactly where it’s going
+to be placed.
+Once you have your CSR file you need to find a CA to hand it over to for the
+second step: signing it. After they’ve done whatever checks they deem
+necessary, they’ll then sign your CSR and give you your new certificate.
+***** Obtaining A Free Certificate *****
+If you want to create a certificate of your own without having to involve a CA,
+you can perform both steps by yourself. This means that the user’s browser will
+present them with a huge: This certificate is self-signed! warning, but if this
+doesn’t concern you, then it doesn’t matter. Self-signed certificates can be a
+cheap alternative to CA signed certificates when you’re testing things out and
+experimenting, or if you’re the only person that needs a secure connection to
+your host. They can also be good for allowing regular users to use secured
+connections if they know they can trust you and you warn them about the
+certificate warnings in advance.
+Here, the process of creating the CSR and having it signed are merged into one
+so you don’t create the CSR file. Instead, you just generate the certificate
+file directly. The following is a command to generate a self-signed
+certificate:
+[Obtaining a Free Certificate]
+As you can see, it’s similar to the other command for creating a CSR that you
+would have signed by a CA, but it has two more options than the previous one.
+The first of the extra options is the -x509 option. This is the option that
+tells OpenSSL to output a self-signed certificate instead of a CSR. If you’re
+using a control panel to create a self-signed certificate be sure to look for,
+and use, an x509 option. The second of the extra options is the -days option.
+This option simply specifies how long (in days) the certificate is valid. Once
+the number of days has passed, you should generate a new certificate file and
+dispose of the old one.
+]]> http://blogxtu.zapto.org/?feed=rss2&p=86 0

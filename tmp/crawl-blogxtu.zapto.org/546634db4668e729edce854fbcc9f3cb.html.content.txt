@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_Programming_Challenge:_Sum_Square_Difference
+Programming_challenge:_Largest_product_in_a_series_→
+****** Programming Challenge: nst prime ******
+Posted on December_15,_2013 by Archer_Reilly
+***** Problem description: *****
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that
+the 6th prime is 13.
+What is the 10 001st prime number?
+***** My solution: *****
+I defined a function nthprime that will calculate the prime number infinitely
+until meet the nth prime number you specify as parameter. here is the python
+code:
+ 
+#!/usr/bin/env python
+#
+# Author: Archer
+# File: nstprime.py
+# Date: 15/Dec/2013
+# Des: to understand what this script doing, check out the problem file in
+#   current direcotry
+#
+# Produced By CSRGXTU
+
+# Des: function prime is used to generate prime number from 2 to the limit
+#   you specified
+#
+# @pram upperlimit
+# @return prime number in list
+def prime(upperlimit = 2):
+    # First, check out the prameter
+    if upperlimit == 2:
+        return [2]
+
+    # Second, in a loop, generate prime
+    x, i = 1, 2
+    while i <= upperlimit:         # check if i is prime         x = i /
+2         while x > 1:
+            if i % x == 0:
+                print i, 'has factor', x
+                break
+            x = x - 1
+        else:
+            print i, 'is prime'
+
+        i += 1
+
+# Des: function nthprime is used to get prime number in the nth location
+#   you specified
+#
+# @pram nth
+# @return interger
+def nthprime(nth = 1):
+    # First, check out the prameter
+    if nth == 1:
+        #print 2, 'is prime'
+        return 2
+
+    # Second, in a loop, generate prime
+    x, i, index = 1, 2, 0
+    while True:
+        # check if i is prime
+        x = i /2
+        while x > 1:
+            if i % x == 0:
+                #print i, 'has factor', x
+                break
+            x = x - 1
+        else:
+                #print i, 'is prime'
+                index += 1
+
+        if index == nth:
+            print i, 'is what you need'
+            return i
+
+        i += 1
+
+nthprime(10001)
+***** Â what is yours *****
+welcome you give me some advice to improve the code to work more efficiently.
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+This entry was posted in Challenge, Linux, Program, Python and tagged blogxtu,
+blogxtu_programming_challenge, blogxtu_python, csrgxtu, programming,
+programming_challenge, python. Bookmark the permalink.
+←_Programming_Challenge:_Sum_Square_Difference
+Programming_challenge:_Largest_product_in_a_series_→
+**** 2 Responses to Programming Challenge: nst prime ****
+   1. archersays:
+      December_27,_2013_at_10:08_am
+      Well, actually, I think the way you determine the prime numbers can be
+      optimized, you use half of n to determine weather n is a prime number,
+      but there is more efficient one, you should use the sqaure root of n to
+      determine if n is a prime number.
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_3:09_pm
+            yeah, you are right, and thus improve the perfomance of the
+            program. thank you very much for the advice.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

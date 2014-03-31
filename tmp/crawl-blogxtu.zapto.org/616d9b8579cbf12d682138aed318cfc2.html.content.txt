@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+****** Monthly Archives: December 2013 ******
+←_Older_posts
+***** cryptography_101 *****
+Posted on December_16,_2013 by Archer_Reilly
+Preface I always think it will be cool to hide your message with cryptography,
+what’s more is that even though the others got your message, he still can not
+get what you trying to say, because the message he get … Continue_reading_→
+ Posted in Cryptography, Linux, Python
+ |  Tagged blogxtu, blogxtu_cryptography, cryptography, cryptography_101,
+csrgxtu, csrgxtu_cryptography, decoding, encode_string
+ | 5_Comments
+***** Programming_challenge:_Largest_product_in_a_series *****
+Posted on December_15,_2013 by Archer_Reilly
+Problem description Find the greatest product of five consecutive digits in the
+1000-digit number. 73167176531330624919225119674426574742355349194934
+96983520312774506326239578318016984801869478851843
+85861560789112949495459501737958331952853208805511
+12540698747158523863050715693290963295227443043557
+66896648950445244523161731856403098711121722383113
+62229893423380308135336276614282806444486645238749
+30358907296290491560440772390713810515859307960866
+70172427121883998797908792274921901699720888093776
+65727333001053367881220235421809751254540594752243
+52584907711670556013604839586446706324415722155397
+53697817977846174064955149290862569321978468622482
+83972241375657056057490261407972968652414535100474
+82166370484403199890008895243450658541227588666881
+16427171479924442928230863465674813919123162824586
+17866458359124566529476545682848912883142607690042
+24219022671055626321111109370544217506941658960408
+07198403850962455444362981230987879927244284909188
+84580156166097919133875499200524063689912560717606
+05886116467109405077541002256983155200055935729725
+71636269561882670428252483600823257530420752963450
+ Posted in Challenge, Program, Python, Uncategorized
+ |  Tagged blogxtu, blogxtu_programming_challenge, csrgxtu, Largest_product_in
+a_series, python
+ | Leave_a_comment
+***** Programming_Challenge:_nst_prime *****
+Posted on December_15,_2013 by Archer_Reilly
+Problem description: By listing the first six prime numbers: 2, 3, 5, 7, 11,
+and 13, we can see that the 6th prime is 13. What is the 10 001st prime number?
+ Posted in Challenge, Linux, Program, Python
+ |  Tagged blogxtu, blogxtu_programming_challenge, blogxtu_python, csrgxtu,
+programming, programming_challenge, python
+ | 2_Comments
+***** Programming_Challenge:_Sum_Square_Difference *****
+Posted on December_15,_2013 by Archer_Reilly
+Problem description The sum of the squares of the first ten natural numbers is,
+12 + 22 + … + 102 = 385 The square of the sum of the first ten natural numbers
+is, (1 + 2 + … … Continue_reading_→
+ Posted in Challenge, Linux, Program, Python
+ |  Tagged blogxtu, csrgxtu, euler_project, linux, programming_challenge,
+python, sum_square_difference, xtu
+ | Leave_a_comment
+***** Blogxtu_SEO_101_—_Install_WordPress_In_Lamp *****
+Posted on December_14,_2013 by Archer_Reilly
+Summary This Blogxtu SEO serials will show you the way that let the word know
+your website. I will start at the beginning, but assume something basic
+knowledge you already know. In this article, I will show you how to … Continue
+reading_→
+ Posted in Linux, OS, Shell, Uncategorized
+ |  Tagged blogxtu, csrgxtu, install_wordpress_ubuntu, own_blog, wordpress,
+wordpress_lamp, wordpress_ubuntu
+ | 9_Comments
+***** test *****
+Posted on December_13,_2013 by csrgxtu
+To let the browser play video is a tedious work, here is a video in two
+formats: MP4 and OGV,Â  if you are using Firefox and Chome, it should be no
+problem, but if you are using IE, then it … Continue_reading_→
+ Posted in Uncategorized
+ | Leave_a_comment
+***** Foreiners_Learning_Chinese *****
+Posted on December_12,_2013 by Archer_Reilly
+This is a note by a America who try to learns Chinese: Dear Tim: shall by too
+doll doll by too jack won dolphin long can Jim shall by too low shall by too
+when dull low, doll car low … Continue_reading_→
+ Posted in Life
+ |  Tagged funny, learning_Chinese, shall_by_too, å°ç½å
+ | Leave_a_comment
+***** Do_It_Yourself_SSL_Guide_Part_1:_An_Introduction *****
+Posted on December_8,_2013 by Archer_Reilly
+Many people want or need to have the connection between the browser and the Web
+server encrypted, but aren’t been able to set it up. This guide is intended to
+help people with the typical Apache on Linux setup to … Continue_reading_→
+ Posted in Linux, OS, Shell
+ |  Tagged apache_ssl, blogxtu_https, blogxtu_ssl, enable_ssl, linux_ssl,
+openssl, å¼å¯ssl
+ | Leave_a_comment
+***** What_Is_SSL_(Secure_Sockets_Layer)_and_What_Are_SSL_Certificates? *****
+Posted on December_8,_2013 by Archer_Reilly
+What Is SSL? SSL (Secure Sockets Layer) is a standard security technology for
+establishing an encrypted link between a server and a clientâtypically a web
+server (website) and a browser; or a mail server and a mail client (e.g.,
+Outlook).
+ Posted in Linux, OS
+ |  Tagged blogxtu_https, blogxtu_ssl, http, https, secure_sockets_layer, ssl,
+stl, å®å¨é¾æ¥
+ | Leave_a_comment
+***** As_Long_As_You_Love_Me_—_Flipped *****
+Posted on December_8,_2013 by csrgxtu
+This is another version of the song of the Justin Bieber, also good!
+ Posted in Music_Video, Video
+ |  Tagged as_long_as_you_love_me, music
+ | Leave_a_comment
+←_Older_posts
+    * Search for: [s                   ] [Search]
+    *      December 2013
+      M  T  W  T  F  S  S
+                Feb_&raquo;
+                       1
+      2  3  4  5  6  7  8
+      9  10 11 12 13 14 15
+      16 17 18 19 20 21 22
+      23 24 25 26 27 28 29
+      30 31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

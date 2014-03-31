@@ -1,0 +1,13 @@
+
+
+
+****** blogxtu ******
+Please enter your username or email address. You will receive a link to create
+a new password via email.
+Username or E-mail:
+[user_login          ]
+[Get New Password]
+Log_in
+←_Back_to_blogxtu
+
+

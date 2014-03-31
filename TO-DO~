@@ -80,3 +80,7 @@ Well, the distributed crawling didnt implemented yet, temp put it
 aside, I am gonna to start processing the data. first, is write a
 Perl script that will split the downloaded data into head and contents
 Second, parse the contents get all of the plain text in it.
+
+31/Mar/2014
+well, simplely I can retrieve the content of the html files, and now
+begain using Lucene indexing and search the content.

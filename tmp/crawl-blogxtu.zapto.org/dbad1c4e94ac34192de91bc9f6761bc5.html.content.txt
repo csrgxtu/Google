@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_test
+Programming_Challenge:_Sum_Square_Difference_→
+****** Blogxtu SEO 101 — Install WordPress In Lamp ******
+Posted on December_14,_2013 by Archer_Reilly
+***** Summary *****
+This Blogxtu SEO serials will show you the way that let the word know your
+website. I will start at the beginning, but assume something basic knowledge
+you already know.
+In this article, I will show you how to install WordPress on Lamp in Ubuntu
+Server 12.04.
+***** Backgrounds *****
+**** platform ****
+In this situation, I use Ubuntu 12.04 as my basic server, actually there are a
+lot other operating systems you can chose to be your basic platform, such as
+Centos, It will work on all platforms if you know that platform. to learn more
+about Ubuntu server 12.04, click here. Here I assume that you already installed
+the Ubuntu Server 12.04.
+**** software ****
+To make things simple, I will use LAMP on Ubuntu server, LAMP is short Linux,
+Apache, Mysql, PHP/Perl/Python, a software bundle, used for website. and Ubuntu
+already have the repositories for LAMP, it means that you can easily install
+the LAMP on Ubuntu via a simple command. to install LAMP, just type:
+sudo tasksel
+and chose the LAMP and then press ok, it will then install LAMP automatically
+on your system. here is what it looks:
+[Install-LAMP-Ubuntu]
+[Ubuntu-Lamp-Installing]
+After installed LAMP, you can verify it by pointing your browser to http://
+localhost, and it should looked like this:
+Generally, the default documents root is placed under /var/www,  it only
+contains a index.html file under /var/www, actually, when you point your
+browser to the HTTP address http://localhost,the web server respond with the
+index.html. you can simply put your website file under the diretory, and it
+will work, but if you want some thing more advanced, you should use virtual
+host on Apache, here I will not illustrate how to set virtual host on Apache.
+***** Installing WordPress *****
+Really, what is wordpress? wordpress is a open sourced software that enables
+you build  your own blog site very quickly and with no difficulties. for
+detailed information, click here.
+First, download the wordpress source file. click here to download.
+Second, decompress the source file into the /var/www, here is the command to do
+it.
+unzip latest.zip
+sudo mv wordpress/* /var/www
+Third, create the database and user to use the database.
+mysql -uroot -p
+create database wordpress default character set utf8;
+grant all on wordpress.* to ‘wordpress’@'localhost’ identified by ‘wordpress’
+Fourth, create a simple configuration file for wordpress.
+cd /var/www
+cp wp-config-sample.php wp-config.php
+edit wp-config.php and change the contents accordingly, mainly the database
+name and the username to login the database.
+Fifth, point your browser to the HTTP address http://localhost/index.php,and
+then the rest is very easy, just follow the instructions you will install the
+wordpress on your system.
+ 
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+This entry was posted in Linux, OS, Shell, Uncategorized and tagged blogxtu,
+csrgxtu, install_wordpress_ubuntu, own_blog, wordpress, wordpress_lamp,
+wordpress_ubuntu. Bookmark the permalink.
+←_test
+Programming_Challenge:_Sum_Square_Difference_→
+**** 9 Responses to Blogxtu SEO 101 — Install WordPress In Lamp ****
+   1. seosays:
+      December_21,_2013_at_1:57_am
+      hey there! , Is fantastic crafting incredibly a great deal of! fraction
+      many of us be in contact much more close to your current document upon
+      AOL? My partner and i require a professional in this particular household
+      to end my own issue. Maybe that is definitely anyone! Looking in advance
+      to check out people.
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+   2. Pingback: happy_wheels
+          o Archer_Reillysays:
+            February_18,_2014_at_3:07_pm
+            well, since you can install your wordpress, like me see it, give me
+            a link, i want to see what you do on it.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+   3. happy_wheelssays:
+      January_14,_2014_at_1:02_am
+      | Hi there, You have done an incredible job.| I will definitely digg it
+      and personally recommend to my friends.| I’m sure they’ll be benefited
+      from this site.
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_3:06_pm
+            well, there are a lot more about the word interesting, i am just
+            like you who want to know all of them, i know that is impossible,
+            but i will try my best to get into it. seems that you are kind of
+            person like me.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+   4. itscarymazegame.comsays:
+      January_14,_2014_at_10:41_pm
+      |There are some fascinating cut-off dates in this article however I
+      donât know if I see all of them heart to heart. |There is some validity
+      but I’ll take hold opinion till I look into it further.| Good article ,
+      thanks and we would like extra! Added to FeedBurner as properly
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_3:02_pm
+            well, mainly i started this blog to share ideas, and first of all,
+            i need to let the world, i.e Google know there is a website named
+            blogxtu who offers you a little knowledge, so i started to seo. I
+            will keep working on it from time to time, and i need your advice
+            too.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+   5. augustin_olariansays:
+      January_30,_2014_at_6:33_pm
+      I am actually satisfied together with your producing talents as smartly
+      as with the dwelling for your site. Is a settled subject material or
+      perhaps do you modify the idea by yourself? In any event . continue
+      outstanding high quality publishing, it’s unusual to see an incredible
+      blog page exactly like it today.
+      VA:F [1.9.22_1171]
+      please wait...
+      Rating: 0.0/5 (0 votes cast)
+      VA:F [1.9.22_1171]
+      Rating: 0 (from 0 votes)
+      Reply
+          o Archer_Reillysays:
+            February_18,_2014_at_2:56_pm
+            wow, thank you, actually i am a student majors in computer sicence,
+            always found myself busy, so can’t posting regularly, but with your
+            approvements, i think it is worth something.
+            VN:F [1.9.22_1171]
+            please wait...
+            Rating: 0.0/5 (0 votes cast)
+            VN:F [1.9.22_1171]
+            Rating: 0 (from 0 votes)
+            Reply
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.

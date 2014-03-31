@@ -1,0 +1,251 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ blogxtu
+Ideas change us, then changes the world!
+Skip_to_content
+    * Home
+    * OS
+          o Linux
+          o Windows
+    * Program
+          o Challenge
+          o Cryptography
+          o C
+          o CPlus
+          o Shell
+          o Perl
+          o PHP
+          o Python
+          o Java
+    * Video
+          o Music_Video
+          o Movie
+          o Chanel
+                # Gags
+          o Clip
+    * Life
+    * About
+    * More
+←_What_Is_SSL_(Secure_Sockets_Layer)_and_What_Are_SSL_Certificates?
+Foreiners_Learning_Chinese_→
+****** Do It Yourself SSL Guide Part 1: An Introduction ******
+Posted on December_8,_2013 by Archer_Reilly
+Many people want or need to have the connection between the browser and the Web
+server encrypted, but aren’t been able to set it up. This guide is intended to
+help people with the typical Apache on Linux setup to make encrypted
+connections available with a minimum of fuss, and if the encrypted connection
+isn’t for a commercial purpose, to do so without spending a penny.
+***** Limitations *****
+Sometimes hosting providers block the user from setting without upgrading
+(i.e., pay more money for) the hosting account. Another possibility is that the
+hosting provider doesn’t want users to have any hands-on control regardless of
+which hosting package you have with them. If you have a package that allows
+full root access or something similar, you’re unlikely to have any problems.
+However, it’s not always necessary to have full access to be able to set it up.
+In this article are alternatives to the hands-on approach you would use when
+logged in as root, but the best I can offer are general pointers. This is
+because most hosting providers offer some sort of control panel for
+administrative tasks, but this access can vary widely from one hosting provider
+to another.
+***** Key Generation *****
+As some of you might already know, a certificate is needed to enable an
+encrypted connection. The connection can be encrypted using the Secure Sockets
+Layer (SSL) or the Transport Layer Security (TLS) mechanism, but you don’t need
+to worry about which will be used because that will be agreed upon by the
+browser and Apache. Before we can obtain a certificate file, we must first
+generate a key file.
+To generate a key file whilst logged in as root via Secure Shell (SSH), you
+need to enter the following command (or a variant of it that’s tailored to your
+preferences.):
+[Key Generation]
+I’ll explain each part of the command. If you’re forced to use a control panel
+provided by your hosting provider, you’ll have a decent idea of what to look
+for and what to do. Some control panels hide this step from the user and
+combine this key generation step with the certificate generation step. If you
+can’t find any option for generating a key, but have an option for generating
+certificates, don’t panic. If you logged in as root, issued this command over
+SSH and got a message back saying something like: bash: openssl: command not
+found, then the OpenSSL program isn’t installed and you either need to install
+it yourself or have your hosting provider install it for you.
+The first part of the command is the name of the program we’re using: OpenSSL.
+This could be something else to look for on a control panel if you can’t find
+keys or certificates. Either OpenSSL or perhaps just SSL. TLS might be another
+possibility, but an unlikely one.
+Next up is the key type option. The two most popular types of keys are DSA and
+RSA. DSA keys are used for digital signatures and aren’t used for encryption;
+RSA keys can be used for both digital signatures and encryption. Here, we need
+to generate an RSA key and you should look out for this option if you’re using
+a control panel to generate the key.
+The next two parts are actually a single instruction to OpenSSL. The -out
+parameter simply indicates that the following text indicates the location of
+where the file should be placed and what the name of the file should be. When
+issuing this command via SSH I recommend using an absolute pathname such as: /
+usr/local/apache2/apache_key.pem so you know exactly where it is once it’s been
+created. If you’re generating the key through a control panel, look for an
+option for specifying where it should be placed, or look for it telling you
+where it will be placed. Regardless of which method you use, make sure that it
+isn’t placed in a directory where Apache serves Web pages.
+The last option of the command is the size if the key in bits. I use 2048
+because it’s the recommended size based on current technology. You can increase
+the number to make it more secure if you prefer, but this means that you might
+take a performance hit when using SSL. A Certificate Authority (CA) might also
+require that you use a size specified by them, but you don’t need to worry
+about CA’s unless you’re intending to use SSL for commercial (or similar)
+purposes.
+Another noteworthy option that’s not used in the command given above is the -
+des3 option. It’s used to add a protecting password to the key. This might
+sound like a good thing, but for the purposes of SSL in Apache, it’s not. If
+you were to use this option, then someone would have to somehow input this
+password every time an SSL connection is made. If you see an option for this in
+a control panel section for making keys, don’t use it.
+***** Obtaining The Certificate *****
+Obtaining a certificate similar to those seen on most commercial sites (where
+they are automatically be trusted by browsers) requires two steps. The first
+step will be performed by you, but you’re not able to perform the second step.
+The CA (such as Verisign or GoDaddy) will perform the last step. The first step
+is to create what’s called a Certificate Signing Request (CSR). A CSR is a file
+that, once signed by a CA, will become your certificate. Here’s the command to
+create it:
+[Normal Certificate]
+Again, I’ll give you some information on each part of the command so you can
+translate this into actions in your control panel or just modify it if you want
+to change something, but it’s unlikely you’ll want to change anything other
+than the file names.
+The first new command is req. This command is to indicate that we intend to use
+CSR management. If you’re using a control panel and you can’t find anything
+about a certificate (request) option, try looking for something like CSR
+(management) instead. The -new option is an obvious one. It simply means that
+we’re creating a new CSR rather than doing something to an existing one. The -
+key option specifies the location of the key file used with the certificate.
+You must alter this option to point to the location of your key file that you
+generated earlier in this guide. If you’re using a control panel you might be
+given a field in a form to specify the location of the key. If this is the case
+then do so. However, some popular control panels ask you to copy and paste the
+key into a text area. How you get the key into your clipboard for pasting in to
+the text area will depend on what can or cannot do with your host. In my
+experience the method most likely to be available is to copy the key to your
+computer, then open it in a text editor. You should use the most secure
+transfer method available to you, but if you’re having to do things this way
+your options are probably quite limited. Trying to open your key file on a
+Windows PC will almost certainly cause it to tell you that it doesn’t know what
+to do with the file. Instead, open the file with Notepad. I’ve opened the key
+in Notepad on Windows XP. The key was presented in text form, but it showed my
+test key over just two lines. Depending on your control panel, it might be OK
+to paste in the key as Notepad presents it, but you might have to make some
+changes after you paste it in to make it display correctly. The following is a
+demonstration of how a 2048 bit key would is often represented in text form:
+[2048 bit key]
+As you can see, it’s a block of text with start and end markers on lines of
+their own at the beginning and end of the key. The main key text appears as 25
+lines that, with the exception of the last line, are 64 characters long. A key
+that has fewer bits will have fewer lines and a key with more bits will have
+more lines, but the line length stays the same.
+The final part of the command, -out, serves the same purpose here as it did
+with the command we used to generate the key. Follow the same guideline of
+giving an absolute pathname (if possible) so you know exactly where it’s going
+to be placed.
+Once you have your CSR file you need to find a CA to hand it over to for the
+second step: signing it. After they’ve done whatever checks they deem
+necessary, they’ll then sign your CSR and give you your new certificate.
+***** Obtaining A Free Certificate *****
+If you want to create a certificate of your own without having to involve a CA,
+you can perform both steps by yourself. This means that the user’s browser will
+present them with a huge: This certificate is self-signed! warning, but if this
+doesn’t concern you, then it doesn’t matter. Self-signed certificates can be a
+cheap alternative to CA signed certificates when you’re testing things out and
+experimenting, or if you’re the only person that needs a secure connection to
+your host. They can also be good for allowing regular users to use secured
+connections if they know they can trust you and you warn them about the
+certificate warnings in advance.
+Here, the process of creating the CSR and having it signed are merged into one
+so you don’t create the CSR file. Instead, you just generate the certificate
+file directly. The following is a command to generate a self-signed
+certificate:
+[Obtaining a Free Certificate]
+As you can see, it’s similar to the other command for creating a CSR that you
+would have signed by a CA, but it has two more options than the previous one.
+The first of the extra options is the -x509 option. This is the option that
+tells OpenSSL to output a self-signed certificate instead of a CSR. If you’re
+using a control panel to create a self-signed certificate be sure to look for,
+and use, an x509 option. The second of the extra options is the -days option.
+This option simply specifies how long (in days) the certificate is valid. Once
+the number of days has passed, you should generate a new certificate file and
+dispose of the old one.
+VN:F [1.9.22_1171]
+please wait...
+Rating: 0.0/10 (0 votes cast)
+VN:F [1.9.22_1171]
+Rating: 0 (from 0 votes)
+This entry was posted in Linux, OS, Shell and tagged apache_ssl, blogxtu_https,
+blogxtu_ssl, enable_ssl, linux_ssl, openssl, å¼å¯ssl. Bookmark the permalink.
+←_What_Is_SSL_(Secure_Sockets_Layer)_and_What_Are_SSL_Certificates?
+Foreiners_Learning_Chinese_→
+**** Leave a Reply Cancel_reply ****
+Your email address will not be published. Required fields are marked *
+Name * [author                        ]
+Email * [email                         ]
+Website [url                           ]
+You may use these HTML tags and attributes: <a href=&quot;&quot;
+title=&quot;&quot;> <abbr title=&quot;&quot;> <acronym title=&quot;&quot;> <b>
+<blockquote cite=&quot;&quot;> <cite> <code> <del datetime=&quot;&quot;> <em>
+<i> <q cite=&quot;&quot;> <strike> <strong>
+[Post Comment]
+    * Search for: [s                   ] [Search]
+    *       March 2014
+      M  T  W     T  F  S  S
+      &laquo;_Feb    
+                       1  2
+      3  4  5     6  7  8  9
+      10 11 12    13 14 15 16
+      17 18 19    20 21 22 23
+      24 25 26    27 28 29 30
+      31  
+**** Recent Posts ****
+    * Manually_install_Sun_JDK_on_Ubuntu_Linux
+    * Cryptology_102_—_Substitution
+    * cryptography_101
+    * Programming_challenge:_Largest_product_in_a_series
+    * Programming_Challenge:_nst_prime
+**** Recent Comments ****
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on cryptography_101
+    * Archer_Reilly on Programming_Challenge:_nst_prime
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+    * Archer_Reilly on Blogxtu_SEO_101_—_Install_WordPress_In_Lamp
+**** Archives ****
+    * February_2014
+    * December_2013
+**** Categories ****
+    * Challenge
+    * Cryptography
+    * Java
+    * Life
+    * Linux
+    * Music_Video
+    * OS
+    * Program
+    * Python
+    * Shell
+    * Uncategorized
+    * Video
+**** Meta ****
+    * Log_in
+    * Entries_RSS
+    * Comments_RSS
+    * WordPress.org
+blogxtu
+Proudly_powered_by_WordPress.
