@@ -84,3 +84,8 @@ Second, parse the contents get all of the plain text in it.
 31/Mar/2014
 well, simplely I can retrieve the content of the html files, and now
 begain using Lucene indexing and search the content.
+
+04/Apr/2014
+create a new branch named DM for data processing. the ultimate goal
+this time is to detect the Near-Duplicate pages. but first, I need
+to remove stop words from the text, and then get the keywords list.
