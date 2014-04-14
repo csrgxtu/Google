@@ -1,0 +1,43 @@
+<project default="all">
+  <property name="obj-dir" location="obj"/>
+  <property name="lib-dir" location="lib"/>
+  <property name="src-dir" location="src"/>
+
+  <target name="init">
+    <mkdir dir="${obj-dir}"/>
+    <mkdir dir="${lib-dir}"/>
+  </target>
+
+  <target name="clean-init">
+    <delete dir="${obj-dir}"/>
+    <delete dir="${lib-dir}"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <javac srcdir="${src-dir}"
+      destdir="${obj-dir}"/>
+  </target>
+
+  <target name="clean-compile">
+    <delete>
+      <fileset dir="${obj-dir}" includes="**/*.class"/>
+    </delete>
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="${lib-dir}/hello.jar"
+        basedir="${obj-dir}"/>
+  </target>
+
+  <target name="clean-jar">
+    <delete file="${lib-dir}/hello.jar"/>
+  </target>
+
+  <target name="run" depends="jar">
+    <java classname="hello" fork="true">
+      <classpath path="${lib-dir}/hello.jar"/>
+    </java>
+  </target>
+  <target name="all" depends="run"/>
+  <target name="clean" depends="clean-init"/>
+</project>

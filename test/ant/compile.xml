@@ -2,4 +2,16 @@
   <target name="compile">
     <javac srcdir="."/>
   </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="hello.jar"
+        basedir="."
+        includes="**/*.class"/>
+  </target>
+
+  <target name="run" depends="jar">
+    <java classname="hello" fork="true">
+      <classpath path="hello.jar"/> 
+    </java>
+  </target>
 </project>
