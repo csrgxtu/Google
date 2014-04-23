@@ -2,7 +2,6 @@
   <head>
     <title> Google Search </title>
     <link rel="stylesheet" href="./styles/pure-min.css">
-    <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
     <style>
       .Result-Box {
         margin-left: 142px;
